@@ -24,7 +24,7 @@ export default function Hem() {
         </p>
       </div>
       <div className="hem-rightside">
-        <h3>om mig:</h3>
+        <h3>Om mig:</h3>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ad
           suscipit totam. In eligendi dolorum magni modi laborum quia nesciunt

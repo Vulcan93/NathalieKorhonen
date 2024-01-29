@@ -1,15 +1,29 @@
 import { Link } from "react-router-dom";
 import PathConstants from "../routes/PathConstants";
+import "./Header.css";
 
 export default function Header() {
   return (
-    <header>
+    <header className="header-container">
       <div>
-        <h1>
-          <Link to={PathConstants.Hem}>Startsida</Link>
-          <Link to={PathConstants.Psykoterapi}>Om Psykoterapi</Link>
-          <Link to={PathConstants.Kontakt}>Kontakt</Link>
-        </h1>
+        <ul className="navbar-container">
+          <li>
+            <Link className="navbar-item" to={PathConstants.Hem}>
+              Startsida
+            </Link>
+          </li>
+          <li>
+            <Link className="navbar-item" to={PathConstants.Psykoterapi}>
+              Om Psykoterapi
+            </Link>
+          </li>
+
+          <li>
+            <Link className="navbar-item" to={PathConstants.Kontakt}>
+              Kontakt
+            </Link>
+          </li>
+        </ul>
       </div>
     </header>
   );

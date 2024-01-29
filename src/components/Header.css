@@ -1,0 +1,18 @@
+.header-container {
+}
+
+.navbar-container {
+  overflow: hidden;
+  list-style-type: none;
+  & li {
+    float: left;
+  }
+}
+
+.navbar-item {
+  text-decoration: none;
+  margin-right: 10px;
+  &:hover {
+    color: blue;
+  }
+}
