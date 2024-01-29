@@ -1,5 +1,3 @@
-import { useState } from "react";
-import "./App.css";
 import Hem from "./pages/Hem";
 import Psykoterapi from "./pages/Psykoterapi";
 import Kontakt from "./pages/Kontakt";
