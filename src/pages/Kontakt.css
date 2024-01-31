@@ -27,8 +27,4 @@
     display: block;
     margin: 10px;
   }
-  & textarea {
-    width: 250px;
-    height: 60px;
-  }
 }

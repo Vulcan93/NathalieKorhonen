@@ -30,9 +30,9 @@ export default function Hem() {
           suscipit totam. In eligendi dolorum magni modi laborum quia nesciunt
           atque at nemo optio numquam quas, iure nihil delectus quos?
         </p>
-        <div className="hem-img">
-          <img src={nathalieProfil} className="logo" alt="Vite logo" />
-        </div>
+        {/* <div className="hem-img"> */}
+        {/* <img src={nathalieProfil} className="logo" alt="Profilbild" /> */}
+        {/* </div> */}
       </div>
     </section>
   );

@@ -1,8 +1,14 @@
 .hem-container {
+  /* display: flex; */
+  /* border: solid red; */
   display: flex;
-  border: solid red;
-  align-items: stretch;
-  margin: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* height: 94.6vh; */
+  height: 100vh;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .hem-leftside {
@@ -13,10 +19,11 @@
 
 .hem-rightside {
   border: solid;
-  flex: 1;
+  flex: 1.5;
   padding: 1rem;
 }
 
 .hem-img img {
-  width: 400px;
+  /* width: 400px; */
+  /* position: relative; */
 }
