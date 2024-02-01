@@ -1,14 +1,19 @@
 .hem-container {
-  /* display: flex; */
-  /* border: solid red; */
+  border: solid red;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   /* height: 94.6vh; */
-  height: 100vh;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  /* height: 100vh; */
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+  height: -o-calc(100vh - 65px); /* opera */
+  height: -webkit-calc(100vh - 65px); /* google, safari */
+  height: -moz-calc(100 - 65px); /* firefox */
+}
+
+.hem-container :first-child {
 }
 
 .hem-leftside {
@@ -24,6 +29,5 @@
 }
 
 .hem-img img {
-  /* width: 400px; */
-  /* position: relative; */
+  width: 1rem;
 }

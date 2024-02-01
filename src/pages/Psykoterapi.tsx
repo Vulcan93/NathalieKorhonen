@@ -1,8 +1,8 @@
 import React from "react";
-
+import "./Psykoterapi.css";
 export default function Psykoterapi() {
   return (
-    <div>
+    <div className="psykoterapi-container">
       <h3>Beskrivning:</h3>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
