@@ -1,5 +1,6 @@
 .navbar-container {
   overflow: hidden;
+  padding-top: 0.3rem;
   list-style-type: none;
   & li {
     float: left;

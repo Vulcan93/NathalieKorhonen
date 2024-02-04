@@ -1,33 +1,38 @@
 .hem-container {
-  border: solid red;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: 94.6vh; */
-  /* height: 100vh; */
-  /* margin-top: 50px;
-  margin-bottom: 50px; */
-  height: -o-calc(100vh - 65px); /* opera */
-  height: -webkit-calc(100vh - 65px); /* google, safari */
-  height: -moz-calc(100 - 65px); /* firefox */
+  padding-top: 1rem;
 }
 
-.hem-container :first-child {
+.hem-leftside,
+.hem-rightside {
+  border: solid blue;
+  margin: 2rem;
+  padding: 2rem;
+  & h3 {
+  }
 }
 
-.hem-leftside {
-  border: solid;
-  flex: 1;
-  padding: 1rem;
+.p-Content {
 }
 
 .hem-rightside {
-  border: solid;
-  flex: 1.5;
-  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  & h4 {
+    margin-bottom: 5px;
+  }
 }
 
-.hem-img img {
-  width: 1rem;
+.img-profilbild {
+  width: 15rem;
+  height: 15rem;
+  margin-right: 100px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
 }
