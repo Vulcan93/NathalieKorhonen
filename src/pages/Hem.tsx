@@ -1,7 +1,6 @@
 import "./Hem.css";
 import profilbild from "../../public/profilbild.png";
 import { ScrollRestoration } from "react-router-dom";
-import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 
