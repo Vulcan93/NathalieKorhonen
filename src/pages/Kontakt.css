@@ -1,11 +1,10 @@
 .container {
   max-width: 100%;
   padding: 0;
-  background-color: #259995;
+  background-color: beige;
 }
 
-.kontakt-leftside,
-.kontakt-rightside {
+.kontakt-content {
   color: blue;
 
   /* background-image: url(../../public/mountains.jpg); */

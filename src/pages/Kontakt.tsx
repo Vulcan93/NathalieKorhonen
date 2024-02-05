@@ -6,14 +6,14 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import "./Kontakt.css";
-import mountains from "../../public/mountains.jpg";
+import sky from "../../public/mountains.jpg";
 
 export default function Kontakt() {
   return (
     <div>
       <Container>
         <Row className="row-main">
-          <div className="kontakt-leftside">
+          <div className="kontakt-content">
             <Col xs={4} md={6} lg={12}>
               <h3 className="kontakt-h3">Kontakt</h3>
               <div className="span-container">
@@ -33,9 +33,9 @@ export default function Kontakt() {
             </Col>
           </div>
           <div className="hero-image">
-            <img src={mountains} alt="ocean/100px250" />
+            <img src={sky} alt="ocean/100px250" />
           </div>
-          <div className="kontakt-rightside">
+          <div className="kontakt-content">
             <Col xs={12} md={6} lg={12}>
               <Form>
                 <Form.Group as={Row} className="mb-3" controlId="formGroupNamn">
@@ -49,8 +49,7 @@ export default function Kontakt() {
                 <Form.Group
                   as={Row}
                   className="mb-3"
-                  controlId="formGroupEmail"
-                >
+                  controlId="formGroupEmail">
                   <Form.Label column sm={1}>
                     Email address:
                   </Form.Label>
@@ -60,8 +59,7 @@ export default function Kontakt() {
                 </Form.Group>
                 <Form.Group
                   className="mb-3"
-                  controlId="beskrivningForm.ControlTextarea"
-                >
+                  controlId="beskrivningForm.ControlTextarea">
                   <Form.Label>
                     Kort beskrivning om vad ärendet gäller:
                   </Form.Label>

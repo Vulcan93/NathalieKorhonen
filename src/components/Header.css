@@ -1,17 +1,35 @@
 .navbar-container {
-  overflow: hidden;
-  padding-top: 0.3rem;
-  list-style-type: none;
+  padding: 1rem;
+  padding-right: 2rem;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
   & li {
-    float: left;
+    margin-left: 10px;
+    float: right;
+    text-align: right;
+  }
+}
+
+li:nth-child(1) {
+  &.active {
+    background-color: red;
   }
 }
 
 .navbar-item {
   text-decoration: none;
+
   margin-right: 10px;
   color: white;
-  &:hover {
+  /* &:hover {
     color: blue;
   }
+  &:active {
+    background-color: red;
+  } */
+}
+
+.navbar-item:first-child {
+  background-color: blue;
 }

@@ -17,7 +17,6 @@ export default function Header() {
               Om Psykoterapi
             </Link>
           </li>
-
           <li>
             <Link className="navbar-item" to={PathConstants.Kontakt}>
               Kontakt

@@ -5,7 +5,7 @@ import { Suspense } from "react";
 
 export default function Layout() {
   return (
-    <div>
+    <div style={{ backgroundColor: "beige" }}>
       <Header />
       <main>
         <Suspense fallback={<div>Loading...</div>}>
