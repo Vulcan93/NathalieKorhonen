@@ -7,7 +7,7 @@ import Image from "react-bootstrap/Image";
 export default function Hem() {
   return (
     <section className="hem-container">
-      <div className="hem-leftside">
+      <div className="hem-beskrivning">
         {/* <h1></h1> */}
         <article>
           <h3>Sidans beskrivning:</h3>
@@ -27,7 +27,7 @@ export default function Hem() {
           </p>
         </article>
       </div>
-      <div className="hem-rightside">
+      <div className="hem-profil">
         <Col>
           <Image className="img-profilbild" src={profilbild} alt="profilbild" />
         </Col>

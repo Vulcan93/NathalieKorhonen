@@ -12,7 +12,7 @@ export default function Kontakt() {
   return (
     <div>
       <Container>
-        <Row className="row-main">
+        <Row>
           <div className="kontakt-content">
             <Col xs={4} md={6} lg={12}>
               <h3 className="kontakt-h3">Kontakt</h3>
@@ -32,9 +32,7 @@ export default function Kontakt() {
               </div>
             </Col>
           </div>
-          <div className="hero-image">
-            <img src={sky} alt="ocean/100px250" />
-          </div>
+          <img src={sky} alt="todopicture/100px250" />
           <div className="kontakt-content">
             <Col xs={12} md={6} lg={12}>
               <Form>
@@ -49,9 +47,10 @@ export default function Kontakt() {
                 <Form.Group
                   as={Row}
                   className="mb-3"
-                  controlId="formGroupEmail">
+                  controlId="formGroupEmail"
+                >
                   <Form.Label column sm={1}>
-                    Email address:
+                    Email:
                   </Form.Label>
                   <Col sm={10}>
                     <Form.Control type="email" placeholder="email" />
@@ -59,7 +58,8 @@ export default function Kontakt() {
                 </Form.Group>
                 <Form.Group
                   className="mb-3"
-                  controlId="beskrivningForm.ControlTextarea">
+                  controlId="beskrivningForm.ControlTextarea"
+                >
                   <Form.Label>
                     Kort beskrivning om vad ärendet gäller:
                   </Form.Label>

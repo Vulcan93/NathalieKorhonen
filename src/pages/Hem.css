@@ -6,8 +6,8 @@
   padding-top: 1rem;
 }
 
-.hem-leftside,
-.hem-rightside {
+.hem-beskrivning,
+.hem-profil {
   border: solid blue;
   margin: 2rem;
   padding: 2rem;
@@ -15,10 +15,7 @@
   }
 }
 
-.p-Content {
-}
-
-.hem-rightside {
+.hem-profil {
   display: flex;
   gap: 1rem;
   & h4 {
