@@ -6,34 +6,26 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import "./Kontakt.css";
-import sky from "../../public/mountains.jpg";
+import sky from "../../public/blommor1.jpg";
 
 export default function Kontakt() {
   return (
     <div>
       <Container>
         <Row>
-          <div className="kontakt-content">
-            <Col xs={4} md={6} lg={12}>
+          <div className="kontakt-info">
+            <Col xs={12} md={6} lg={12}>
               <h3 className="kontakt-h3">Kontakt</h3>
+              <p>Om du vill komma i kontakt med mig och har frågor:</p>
               <div className="span-container">
-                <span>Nathalie Kornhonen</span>
-                <span>
-                  Telefon:
-                  <a href="tel:+467XXXXXXXX">+467XXXXXXXX</a>
-                </span>
                 <span>
                   Email:
                   <a href="mailto:someone@example.com">someone@example.com</a>
                 </span>
-                <address>
-                  <p>Winter wonderland 56B</p> <p>415 98</p> <p> Göteborg</p>
-                </address>
               </div>
             </Col>
           </div>
-          <img src={sky} alt="todopicture/100px250" />
-          <div className="kontakt-content">
+          <div className="kontakt-requestform">
             <Col xs={12} md={6} lg={12}>
               <Form>
                 <Form.Group as={Row} className="mb-3" controlId="formGroupNamn">
@@ -75,6 +67,11 @@ export default function Kontakt() {
               </Form>
             </Col>
           </div>
+        </Row>
+        <Row>
+          <Col>
+            <img src={sky} alt="todopicture/100px250" />
+          </Col>
         </Row>
       </Container>
     </div>

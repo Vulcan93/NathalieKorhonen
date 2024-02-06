@@ -9,16 +9,26 @@
   }
 }
 
+.navbar-brand {
+  padding-left: 3rem;
+}
+
 .navbar-item {
+  color: black;
   padding-left: 1rem;
   padding-right: 1rem;
   text-decoration: none;
-  color: rgb(45, 196, 90);
+}
+
+.active {
+  background-color: rgb(69, 206, 204);
+  color: white;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
 .navbar-item:hover {
   background-color: rgb(53, 173, 171);
-  color: white;
   padding-top: 17px;
   padding-bottom: 17px;
 }
