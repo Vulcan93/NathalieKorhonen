@@ -6,7 +6,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import "./Kontakt.css";
-import sky from "../../public/blommor1.jpg";
+import blommor1 from "../../public/blommor1.jpg";
 
 export default function Kontakt() {
   return (
@@ -14,7 +14,7 @@ export default function Kontakt() {
       <Container>
         <Row>
           <div className="kontakt-info">
-            <Col xs={12} md={6} lg={12}>
+            <Col xs={12} md={12} lg={12}>
               <h3 className="kontakt-h3">Kontakt</h3>
               <p>Om du vill komma i kontakt med mig och har frågor:</p>
               <div className="span-container">
@@ -25,8 +25,9 @@ export default function Kontakt() {
               </div>
             </Col>
           </div>
+
           <div className="kontakt-requestform">
-            <Col xs={12} md={6} lg={12}>
+            <Col xs={12} md={12} lg={12}>
               <Form>
                 <Form.Group as={Row} className="mb-3" controlId="formGroupNamn">
                   <Form.Label column sm={1}>
@@ -70,7 +71,7 @@ export default function Kontakt() {
         </Row>
         <Row>
           <Col>
-            <img src={sky} alt="todopicture/100px250" />
+            <img src={blommor1} alt="todopicture/100px250" />
           </Col>
         </Row>
       </Container>
