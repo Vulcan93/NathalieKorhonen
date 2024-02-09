@@ -10,17 +10,17 @@ export default function Header() {
       <nav>
         <ul className="navbar-container">
           <li>
-            <NavLink className="navbar-item" to={PathConstants.Hem}>
+            <NavLink className="navbar-item1" to={PathConstants.Hem}>
               Startsida
             </NavLink>
           </li>
           <li>
-            <NavLink className="navbar-item" to={PathConstants.Psykoterapi}>
+            <NavLink className="navbar-item2" to={PathConstants.Psykoterapi}>
               Om Psykoterapi
             </NavLink>
           </li>
           <li>
-            <NavLink className="navbar-item" to={PathConstants.Kontakt}>
+            <NavLink className="navbar-item3" to={PathConstants.Hem}>
               Kontakt
             </NavLink>
           </li>
