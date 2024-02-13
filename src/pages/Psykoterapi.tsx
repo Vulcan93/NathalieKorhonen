@@ -1,8 +1,10 @@
-import React from "react";
+import { FC, forwardRef } from "react";
 import "./Psykoterapi.css";
-export default function Psykoterapi() {
+import { ScrollRefProps } from "../interfaces/Interface";
+
+const Psykoterapi: FC<ScrollRefProps> = ({ forwardedRef }) => {
   return (
-    <div className="psykoterapi-container">
+    <div ref={forwardedRef} className="psykoterapi-container">
       <h3>Beskrivning:</h3>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
@@ -15,4 +17,6 @@ export default function Psykoterapi() {
       </p>
     </div>
   );
-}
+};
+
+export default Psykoterapi;

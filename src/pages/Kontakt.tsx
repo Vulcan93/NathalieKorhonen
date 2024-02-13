@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC, forwardRef } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -7,10 +7,11 @@ import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import "./Kontakt.css";
 import blommor1 from "../../public/blommor1.jpg";
+import { ScrollRefProps } from "../interfaces/Interface";
 
-export default function Kontakt() {
+const Kontakt: FC<ScrollRefProps> = ({ forwardedRef }) => {
   return (
-    <div>
+    <div ref={forwardedRef}>
       <Container>
         <Row>
           <div className="kontakt-info">
@@ -40,8 +41,7 @@ export default function Kontakt() {
                 <Form.Group
                   as={Row}
                   className="mb-3"
-                  controlId="formGroupEmail"
-                >
+                  controlId="formGroupEmail">
                   <Form.Label column sm={1}>
                     Email:
                   </Form.Label>
@@ -51,8 +51,7 @@ export default function Kontakt() {
                 </Form.Group>
                 <Form.Group
                   className="mb-3"
-                  controlId="beskrivningForm.ControlTextarea"
-                >
+                  controlId="beskrivningForm.ControlTextarea">
                   <Form.Label>
                     Kort beskrivning om vad ärendet gäller:
                   </Form.Label>
@@ -77,4 +76,5 @@ export default function Kontakt() {
       </Container>
     </div>
   );
-}
+};
+export default Kontakt;

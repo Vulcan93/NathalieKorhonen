@@ -20,26 +20,14 @@
   text-decoration: none;
 }
 
-.active {
+/* .active {
   background-color: rgb(69, 206, 204);
   color: white;
   padding-top: 17px;
   padding-bottom: 17px;
-}
+} */
 
-.navbar-item1:hover {
-  background-color: rgb(53, 173, 171);
-  padding-top: 17px;
-  padding-bottom: 17px;
-}
-
-.navbar-item2:hover {
-  background-color: rgb(53, 173, 171);
-  padding-top: 17px;
-  padding-bottom: 17px;
-}
-
-.navbar-item3:hover {
+.navbar-item:hover {
   background-color: rgb(53, 173, 171);
   padding-top: 17px;
   padding-bottom: 17px;
