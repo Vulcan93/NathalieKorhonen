@@ -1,10 +1,14 @@
-import { Outlet, useOutletContext } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
-import { RefObject, Suspense, useRef } from "react";
-import Kontakt from "../pages/Kontakt";
-import Hem from "../pages/Hem";
-import Psykoterapi from "../pages/Psykoterapi";
+import { Suspense, createContext, useContext, useRef } from "react";
+import { RefContextType } from "../interfaces/Interface";
+
+const RefContext = createContext<RefContextType>({
+  hemRef: { current: null },
+  psykoterapiRef: { current: null },
+  kontaktRef: { current: null },
+});
 
 export default function Layout() {
   const hemRef = useRef<HTMLDivElement | null>(null);
@@ -34,19 +38,20 @@ export default function Layout() {
   };
 
   return (
-    <div>
-      <Header scrollToRef={scrollToRef} />
-      <main>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Hem forwardedRef={hemRef} />
-          <Psykoterapi forwardedRef={psykoterapiRef} />
-          <Kontakt forwardedRef={kontaktRef} />
-          {/* <Outlet context={[name]} /> */}
-          <Outlet />
-          {/* <div ref={wrapperRef}></div> */}
-        </Suspense>
-      </main>
-      <Footer />
-    </div>
+    <RefContext.Provider value={{ hemRef, psykoterapiRef, kontaktRef }}>
+      <div ref={hemRef}>
+        <Header scrollToRef={scrollToRef} />
+        <main>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Outlet />
+          </Suspense>
+        </main>
+        <Footer />
+      </div>
+    </RefContext.Provider>
   );
+}
+
+export function useScrollRefs() {
+  return useContext(RefContext);
 }

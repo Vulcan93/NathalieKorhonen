@@ -1,14 +1,13 @@
 import "./Hem.css";
 import profilbild from "../../public/profilbild.png";
-import { ScrollRestoration } from "react-router-dom";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import { FC, forwardRef, useEffect } from "react";
-import { ScrollRefProps } from "../interfaces/Interface";
+import fish from "../../public/fish.jpg";
 
-const Hem: FC<ScrollRefProps> = ({ forwardedRef }) => {
+const Hem = () => {
   return (
-    <div ref={forwardedRef}>
+    <div>
+      <img className="hero-img" src={fish} />
       <section className="hem-container">
         <div className="hem-beskrivning">
           {/* <h1></h1> */}

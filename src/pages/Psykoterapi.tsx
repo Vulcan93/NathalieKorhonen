@@ -1,10 +1,11 @@
-import { FC, forwardRef } from "react";
 import "./Psykoterapi.css";
-import { ScrollRefProps } from "../interfaces/Interface";
+import { useScrollRefs } from "../components/Layout";
 
-const Psykoterapi: FC<ScrollRefProps> = ({ forwardedRef }) => {
+const Psykoterapi = () => {
+  const { psykoterapiRef } = useScrollRefs();
+
   return (
-    <div ref={forwardedRef} className="psykoterapi-container">
+    <div ref={psykoterapiRef} className="psykoterapi-container">
       <h3>Beskrivning:</h3>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore

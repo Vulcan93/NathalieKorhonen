@@ -1,17 +1,17 @@
-import React, { FC, forwardRef } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
 import "./Kontakt.css";
 import blommor1 from "../../public/blommor1.jpg";
-import { ScrollRefProps } from "../interfaces/Interface";
+import { useScrollRefs } from "../components/Layout";
 
-const Kontakt: FC<ScrollRefProps> = ({ forwardedRef }) => {
+const Kontakt = () => {
+  const { kontaktRef } = useScrollRefs();
+
   return (
-    <div ref={forwardedRef}>
+    <div ref={kontaktRef}>
       <Container>
         <Row>
           <div className="kontakt-info">

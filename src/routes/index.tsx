@@ -1,14 +1,20 @@
-import React from "react";
-import PathConstants from "./PathConstants";
+import { lazy } from "react";
 
-const Hem = React.lazy(() => import("../pages/Hem"));
-const Psykoterapi = React.lazy(() => import("../pages/Psykoterapi"));
-const Kontakt = React.lazy(() => import("../pages/Kontakt"));
+const Hem = lazy(() => import("../pages/Hem"));
+const Psykoterapi = lazy(() => import("../pages/Psykoterapi"));
+const Kontakt = lazy(() => import("../pages/Kontakt"));
 
 const routes = [
-  { path: PathConstants.Hem, element: <Hem /> },
-  { path: PathConstants.Psykoterapi, element: <Psykoterapi /> },
-  { path: PathConstants.Kontakt, element: <Kontakt /> },
+  {
+    path: "/",
+    element: (
+      <>
+        <Hem />
+        <Psykoterapi />
+        <Kontakt />
+      </>
+    ),
+  },
 ];
 
 export default routes;
