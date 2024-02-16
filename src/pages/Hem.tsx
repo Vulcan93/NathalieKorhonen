@@ -1,13 +1,14 @@
 import "./Hem.css";
 import profilbild from "../../public/profilbild.png";
+import blommor2 from "../../public/blommor2.jpg";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
-import fish from "../../public/fish.jpg";
 
 const Hem = () => {
   return (
     <div>
-      <img className="hero-img" src={fish} />
+      <div className="hero">
+        <p>Välkommen till min sida!</p>
+      </div>
       <section className="hem-container">
         <div className="hem-beskrivning">
           {/* <h1></h1> */}
@@ -30,26 +31,22 @@ const Hem = () => {
             </p>
           </article>
         </div>
-        <div className="hem-profil">
-          <Col>
-            <Image
-              className="img-profilbild"
-              src={profilbild}
-              alt="profilbild"
-            />
-          </Col>
-          <div className="text-container">
-            <h4>Om mig:</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              adipisci provident voluptate, ad tenetur illo? Dignissimos
-              recusandae hic sequi, minima omnis, eveniet iure, ipsa rem
-              reprehenderit nostrum quia odio fugit!
-            </p>
-          </div>
-        </div>
+        <img className="hem-blommor" src={blommor2} alt="blommor2" />
+
         {/* <ScrollRestoration /> */}
       </section>
+      <div className="hem-profil">
+        <div className="text-container">
+          <h4>Om mig:</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            adipisci provident voluptate, ad tenetur illo? Dignissimos
+            recusandae hic sequi, minima omnis, eveniet iure, ipsa rem
+            reprehenderit nostrum quia odio fugit!
+          </p>
+          <img className="img-profilbild" src={profilbild} alt="profilbild" />
+        </div>
+      </div>
     </div>
   );
 };

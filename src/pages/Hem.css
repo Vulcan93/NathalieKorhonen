@@ -1,21 +1,31 @@
-.hero-img {
-  width: 100%;
-  height: 100%;
-  margin-right: 100px;
-}
-
 .hem-container {
   display: flex;
   padding-top: 1rem;
 }
 
-.hem-beskrivning,
-.hem-profil {
+.hero {
+  background-image: url("fish.jpg");
+  padding-top: 200px;
+  padding-bottom: 200px;
+  & p {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+.hem-beskrivning {
   border: solid blue;
   margin: 2rem;
   padding: 2rem;
-  & h3 {
-  }
+  flex: 1.2;
+}
+
+.hem-blommor {
+  border: solid blue;
+  height: 40rem;
+  width: 10rem;
+  flex: 1.7;
 }
 
 .hem-profil {
