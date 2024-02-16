@@ -1,4 +1,6 @@
 .navbar-container {
+  width: 100%;
+  background-color: #28d677;
   padding: 1rem;
   list-style: none;
   display: flex;
@@ -20,13 +22,18 @@
   text-decoration: none;
 }
 
-/* .active {
+.navbar-item:focus {
   background-color: rgb(69, 206, 204);
   color: white;
   padding-top: 17px;
   padding-bottom: 17px;
-} */
-
+}
+.active {
+  background-color: rgb(69, 206, 204);
+  color: white;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
 .navbar-item:hover {
   background-color: rgb(53, 173, 171);
   padding-top: 17px;

@@ -11,8 +11,8 @@ main {
 }
 
 header {
-  margin: 0;
-  background-color: #28d677;
+  position: sticky;
+  top: 0;
 }
 
 footer {

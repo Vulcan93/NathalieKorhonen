@@ -1,4 +1,5 @@
 import { lazy } from "react";
+import Policy from "../pages/Policy";
 
 const Hem = lazy(() => import("../pages/Hem"));
 const Psykoterapi = lazy(() => import("../pages/Psykoterapi"));
@@ -14,6 +15,10 @@ const routes = [
         <Kontakt />
       </>
     ),
+  },
+  {
+    path: "/policy",
+    element: <Policy />,
   },
 ];
 
