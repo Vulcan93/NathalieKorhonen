@@ -1,4 +1,40 @@
 .psykoterapi-container {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.img-psykoterapi {
   border: solid blue;
-  padding-bottom: 19rem;
+  height: 600px;
+  /* width: 450px; */
+  flex: 1;
+  margin-left: 50px;
+}
+
+.psykoterapi-beskrivning {
+  border: solid blue;
+  flex: 1;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+/* Om mig section: */
+
+.text-container {
+  display: flex;
+  border: solid blue;
+}
+
+.om-mig-beskrivning {
+  flex: 1;
+  gap: 1rem;
+  & h4 {
+    text-align: center;
+  }
+}
+
+.img-profilbild {
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
 }

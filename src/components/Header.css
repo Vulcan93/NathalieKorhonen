@@ -22,12 +22,6 @@
   text-decoration: none;
 }
 
-.navbar-item:focus {
-  background-color: rgb(69, 206, 204);
-  color: white;
-  padding-top: 17px;
-  padding-bottom: 17px;
-}
 .active {
   background-color: rgb(69, 206, 204);
   color: white;

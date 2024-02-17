@@ -7,12 +7,14 @@ import { RefContextType } from "../interfaces/Interface";
 const RefContext = createContext<RefContextType>({
   hemRef: { current: null },
   psykoterapiRef: { current: null },
+  omMigRef: { current: null },
   kontaktRef: { current: null },
 });
 
 export default function Layout() {
   const hemRef = useRef<HTMLDivElement | null>(null);
   const psykoterapiRef = useRef<HTMLDivElement | null>(null);
+  const omMigRef = useRef<HTMLDivElement | null>(null);
   const kontaktRef = useRef<HTMLDivElement | null>(null);
 
   const scrollToRef = (refName: string) => {
@@ -27,6 +29,11 @@ export default function Layout() {
           psykoterapiRef.current.scrollIntoView({ behavior: "smooth" });
         }
         break;
+      case "OmMig":
+        if (omMigRef.current) {
+          omMigRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+        break;
       case "Kontakt":
         if (kontaktRef.current) {
           kontaktRef.current.scrollIntoView({ behavior: "smooth" });
@@ -38,7 +45,9 @@ export default function Layout() {
   };
 
   return (
-    <RefContext.Provider value={{ hemRef, psykoterapiRef, kontaktRef }}>
+    <RefContext.Provider
+      value={{ hemRef, psykoterapiRef, omMigRef, kontaktRef }}
+    >
       <div ref={hemRef}>
         <Header scrollToRef={scrollToRef} />
         <main>
