@@ -3,6 +3,8 @@ import "./Hem.css";
 import blommor2 from "../../public/blommor2.jpg";
 import Col from "react-bootstrap/Col";
 
+//Todo: reda ut alt biten
+
 const Hem = () => {
   return (
     <div>
@@ -31,8 +33,13 @@ const Hem = () => {
             </p>
           </article>
         </div>
-        <img className="hem-blommor" src={blommor2} alt="blommor2" />
-
+        <img
+          className="img-hem"
+          src={blommor2}
+          alt="blommor2"
+          width={400}
+          height={900}
+        />
         {/* <ScrollRestoration /> */}
       </section>
     </div>

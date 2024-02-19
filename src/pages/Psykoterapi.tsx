@@ -8,10 +8,15 @@ const Psykoterapi = () => {
 
   return (
     <div>
-      <div className="psykoterapi-container">
-        <img className="img-psykoterapi" src={bicycle} />
-        <div ref={psykoterapiRef} className="psykoterapi-beskrivning">
-          <h3>Beskrivning:</h3>
+      <div ref={psykoterapiRef} className="psykoterapi-container">
+        <img
+          className="img-psykoterapi"
+          src={bicycle}
+          width={500}
+          height={800}
+        />
+        <div className="psykoterapi-beskrivning">
+          <h3>Beskrivning om psykoterapi:</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
             dolorum, fugiat aliquam officiis natus sapiente eligendi aliquid
@@ -24,8 +29,8 @@ const Psykoterapi = () => {
           </p>
         </div>
       </div>
-      <div className="text-container">
-        <div ref={omMigRef} className="om-mig-beskrivning">
+      <div ref={omMigRef} className="text-container">
+        <div className="om-mig-beskrivning">
           <h4>Om mig:</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam

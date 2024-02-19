@@ -26,12 +26,12 @@ export default function Layout() {
         break;
       case "Psykoterapi":
         if (psykoterapiRef.current) {
-          psykoterapiRef.current.scrollIntoView({ behavior: "smooth" });
+          window.scrollTo(0, psykoterapiRef.current.offsetTop - 50);
         }
         break;
       case "OmMig":
         if (omMigRef.current) {
-          omMigRef.current.scrollIntoView({ behavior: "smooth" });
+          window.scrollTo(0, omMigRef.current.offsetTop - 80);
         }
         break;
       case "Kontakt":
@@ -44,11 +44,21 @@ export default function Layout() {
     }
   };
 
+  function scrollToView(id: string) {
+    id = "homeSectionId";
+    const yOffset = -10;
+    const element = document.getElementById(id);
+    if (element == null) return;
+    const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+    10;
+    //show 10 pixels down the border
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+
   return (
     <RefContext.Provider
-      value={{ hemRef, psykoterapiRef, omMigRef, kontaktRef }}
-    >
-      <div ref={hemRef}>
+      value={{ hemRef, psykoterapiRef, omMigRef, kontaktRef }}>
+      <div id="homeSectionId" ref={hemRef}>
         <Header scrollToRef={scrollToRef} />
         <main>
           <Suspense fallback={<div>Loading...</div>}>
