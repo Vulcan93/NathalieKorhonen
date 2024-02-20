@@ -1,45 +1,32 @@
 import "./Hem.css";
-
-import blommor2 from "../../public/blommor2.jpg";
+import profilbild from "../../public/profilbild.jpg";
 import Col from "react-bootstrap/Col";
 
 //Todo: reda ut alt biten
+// Todo: hidden virtual grejs
 
 const Hem = () => {
   return (
     <div>
       <div className="hero">
-        <p>Välkommen till min sida!</p>
+        <p>Psykologmottagning Nathalie Korhonen</p>
       </div>
       <section className="hem-container">
+        <img className="img-profilbild" src={profilbild} alt="profilbild" />
         <div className="hem-beskrivning">
-          {/* <h1></h1> */}
           <article>
-            <h3>Sidans beskrivning:</h3>
+            <h1 className="visuallyhidden"></h1>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-              ad suscipit totam. In eligendi dolorum magni modi laborum quia
-              nesciunt atque at nemo optio numquam quas, iure nihil delectus
-              quos? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Ducimus ad suscipit totam. In eligendi dolorum magni modi laborum
-              quia nesciunt atque at nemo optio numquam quas, iure nihil
-              delectus quos? Lorem ipsum dolor sit, amet consectetur adipisicing
-              elit. Ducimus ad suscipit totam. In eligendi dolorum magni modi
-              laborum quia nesciunt atque at nemo optio numquam quas, iure nihil
-              delectus quos? Lorem ipsum dolor sit, amet consectetur adipisicing
-              elit. Ducimus ad suscipit totam. In eligendi dolorum magni modi
-              laborum quia nesciunt atque at nemo optio numquam quas, iure nihil
-              delectus quos?
+              Mitt namn är Nathalie Korhonen och jag arbetar som legitimerad
+              psykolog. Jag erbjuder psykoterapi för dig som kanske fastnat i
+              nedstämdhet, oro, ångest, stress eller är i kris och behöver hjälp
+              att ta dig vidare. Jag erbjuder både kortare och längre terapier,
+              med ett integrativt arbetssätt för att anpassa metod efter dina
+              behov och förutsättningar.
             </p>
           </article>
         </div>
-        <img
-          className="img-hem"
-          src={blommor2}
-          alt="blommor2"
-          width={400}
-          height={900}
-        />
+
         {/* <ScrollRestoration /> */}
       </section>
     </div>

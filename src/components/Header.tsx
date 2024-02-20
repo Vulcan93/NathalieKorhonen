@@ -19,14 +19,14 @@ export default function Header({ scrollToRef }: HeaderProps) {
     setActiveTab("Psykoterapi");
   };
 
-  const handleKontaktTab = () => {
-    scrollToRef("Kontakt");
-    setActiveTab("Kontakt");
-  };
-
   const handleOmMigTab = () => {
     scrollToRef("OmMig");
     setActiveTab("OmMig");
+  };
+
+  const handleKontaktTab = () => {
+    scrollToRef("Kontakt");
+    setActiveTab("Kontakt");
   };
 
   return (
@@ -39,9 +39,18 @@ export default function Header({ scrollToRef }: HeaderProps) {
                 activeTab === "Hem" ? "navbar-item active" : "navbar-item"
               }
               to={PathConstants.Hem}
-              onClick={() => handleHemTab()}
-            >
+              onClick={() => handleHemTab()}>
               Startsida
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={
+                activeTab === "OmMig" ? "navbar-item active" : "navbar-item"
+              }
+              to={PathConstants.Hem}
+              onClick={() => handleOmMigTab()}>
+              Om Mig
             </Link>
           </li>
           <li>
@@ -52,30 +61,18 @@ export default function Header({ scrollToRef }: HeaderProps) {
                   : "navbar-item"
               }
               to={PathConstants.Hem}
-              onClick={() => handlePsykoterapiTab()}
-            >
+              onClick={() => handlePsykoterapiTab()}>
               Om Psykoterapi
             </Link>
           </li>
-          <li>
-            <Link
-              className={
-                activeTab === "OmMig" ? "navbar-item active" : "navbar-item"
-              }
-              to={PathConstants.Hem}
-              onClick={() => handleOmMigTab()}
-            >
-              Om Mig
-            </Link>
-          </li>
+
           <li>
             <Link
               className={
                 activeTab === "Kontakt" ? "navbar-item active" : "navbar-item"
               }
               to={PathConstants.Hem}
-              onClick={() => handleKontaktTab()}
-            >
+              onClick={() => handleKontaktTab()}>
               Kontakt
             </Link>
           </li>

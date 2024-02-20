@@ -1,3 +1,29 @@
+/* Om mig section: */
+
+.text-container {
+  display: flex;
+}
+
+.om-mig-beskrivning {
+  text-align: center;
+  border: solid blue;
+  flex: 1;
+  padding-top: 5rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  margin-left: 2rem;
+  & h2 {
+  }
+}
+
+.img-profilbild {
+  border: solid blue;
+  width: 300px;
+  height: 300px;
+  margin: 2rem;
+  padding: 2rem;
+}
+
 /* Om psykoterapi section: */
 
 .psykoterapi-container {
@@ -17,28 +43,32 @@
   flex: 1;
   margin: 2rem;
   padding: 2rem;
-}
-
-/* Om mig section: */
-
-.text-container {
-  display: flex;
-}
-
-.om-mig-beskrivning {
-  border: solid blue;
-  flex: 1;
-  padding-left: 1.5rem;
-  padding-right: 25rem;
-  margin-left: 2rem;
-  & h4 {
+  & h3 {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 
-.img-profilbild {
-  border: solid blue;
-  width: 300px;
-  height: 300px;
+.psykoterapi-content {
+  text-align: center;
+}
+
+/* Psykolog foretagarna section: */
+
+.psykologForetagarna-container {
+  display: flex;
   margin: 2rem;
-  padding: 2rem;
+  font-size: 12px;
+}
+
+.psykologForetagarna-content {
+  border: solid rgb(134, 42, 165);
+  flex: 1;
+  padding-right: 0rem;
+  margin-right: 15rem;
+}
+
+.img-psykologForetagarna {
+  border: solid rgb(134, 42, 165);
+  height: auto;
 }

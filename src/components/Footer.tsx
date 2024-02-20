@@ -1,16 +1,15 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import PathConstants from "../routes/PathConstants";
-import "./Header.css";
+import "./Footer.css";
 
 export default function Footer() {
   return (
     <footer>
       <nav>
-        <ul className="navbar-container">
-          <p>&copy; 2024 Nathalie Psykologi AB. All rights reserved.</p>
+        <ul className="footer-container">
+          <span>&copy; 2024 Nathalie Psykologi AB. All rights reserved.</span>
           <li>
-            <Link className="navbar-item" to={PathConstants.Policy}>
+            <Link className="footer-item" to={PathConstants.Policy}>
               Policy
             </Link>
           </li>
