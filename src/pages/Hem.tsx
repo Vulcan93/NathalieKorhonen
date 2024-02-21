@@ -1,6 +1,5 @@
 import "./Hem.css";
 import profilbild from "../../public/profilbild.jpg";
-import Col from "react-bootstrap/Col";
 
 //Todo: reda ut alt biten
 // Todo: hidden virtual grejs
