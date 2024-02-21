@@ -2,6 +2,7 @@
 
 .text-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .om-mig-beskrivning {
@@ -9,33 +10,40 @@
   border: solid blue;
   flex: 1;
   padding-top: 5rem;
-  padding-left: 20rem;
-  padding-right: 20rem;
-  margin-left: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  min-width: 240px;
   & h2 {
+    line-height: 3rem;
   }
 }
 
-.img-profilbild {
-  border: solid blue;
-  width: 300px;
-  height: 300px;
-  margin: 2rem;
-  padding: 2rem;
+.img-psykoterapi-blommor {
+  border: solid gold;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 0.5;
+  margin-top: 5rem;
 }
 
 /* Om psykoterapi section: */
 
 .psykoterapi-container {
   display: flex;
-  margin-top: 1rem;
+  margin-top: 5rem;
+  flex-wrap: wrap;
 }
 
-.img-psykoterapi {
+.img-bicycle {
   border: solid blue;
   height: auto;
   flex: 0.7;
-  margin: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .psykoterapi-beskrivning {
@@ -46,6 +54,7 @@
   & h3 {
     font-size: 2rem;
     text-align: center;
+    line-height: 3rem;
   }
 }
 
@@ -57,18 +66,35 @@
 
 .psykologForetagarna-container {
   display: flex;
+  flex-wrap: wrap;
   margin: 2rem;
+  margin-top: 5rem;
   font-size: 12px;
 }
 
 .psykologForetagarna-content {
   border: solid rgb(134, 42, 165);
   flex: 1;
-  padding-right: 0rem;
-  margin-right: 15rem;
+  & li {
+    margin-left: 1rem;
+  }
 }
 
 .img-psykologForetagarna {
   border: solid rgb(134, 42, 165);
   height: auto;
+  margin-top: 1rem;
+  min-width: 240px;
+}
+
+/* Pris section: */
+
+.priser-container {
+  text-align: center;
+  margin: 2rem;
+  & h5 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+  }
 }

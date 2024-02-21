@@ -1,52 +1,64 @@
-/* Kontakt section: */
-
-.container {
-  max-width: 100%;
-  padding: 0;
-  margin-top: 1rem;
-}
+/* Kontakt info section: */
 
 .kontakt-container {
   display: flex;
-}
-
-.kontakt-info {
-  margin: 2rem;
-  padding-left: 1.5rem;
-  border: solid red;
-  width: 50%;
-  & h4 {
-    font-size: 2rem;
-  }
-}
-
-.span-container {
-  line-height: 2;
-}
-
-a {
-  text-decoration: none;
+  flex-wrap: wrap;
+  margin-top: 5rem;
 }
 
 .img-kontakt {
   border: solid brown;
-  margin: 2rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  max-width: 50%;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+  margin: auto;
+  min-width: 240px;
   height: auto;
 }
 
-/* Kontakt request: */
+/* .kontakt-img-container {
+  margin-right: 2rem;
+  padding: 1rem;
+  flex: 1;
+} */
 
-.kontakt-requestform {
+.kontakt-info {
+  margin-top: 2rem;
   border: solid blue;
   flex: 1;
-  padding-top: 10px;
-  margin-right: 2rem;
-  padding: 2rem;
+  & h4 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+  }
+  & p {
+    text-align: center;
+  }
 }
 
-.textarea-main {
-  width: 100%;
+.span-container {
+  text-align: center;
+  margin-bottom: 1rem;
+  & a {
+    text-decoration: none;
+  }
+}
+
+.form-container {
+  border: solid blue;
+  text-align: center;
+}
+
+input,
+label,
+textarea {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.namn-label,
+.email-label,
+.textarea-label {
+  line-height: 2rem;
+  text-align: center;
 }

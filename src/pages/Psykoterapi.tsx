@@ -29,20 +29,15 @@ const Psykoterapi = () => {
           </p>
         </div>
         <img
-          className="img-hem"
+          className="img-psykoterapi-blommor"
           src={blommor2}
           alt="blommor2"
-          width={400}
+          width={300}
           height={900}
         />
       </div>
       <div ref={psykoterapiRef} className="psykoterapi-container">
-        <img
-          className="img-psykoterapi"
-          src={bicycle}
-          width={500}
-          height={800}
-        />
+        <img className="img-bicycle" src={bicycle} width={300} height={800} />
         <div className="psykoterapi-beskrivning">
           <h3>Psykoterapi</h3>
           <p className="psykoterapi-content">
@@ -61,27 +56,25 @@ const Psykoterapi = () => {
             flytande och utforskande.
           </p>
           <p>Psykoterapi passar dig som exempelvis önskar hjälp med:</p>
-          <p>
-            <ul>
-              <li>Relationsproblem.</li>
-              <li>Ensamhet och svårigheter att skapa nära relationer.</li>
-              <li>
-                Stress, oro, ångest, sömnproblem, nedstämdhet och depression.
-              </li>
-              <li>
-                Höga krav på sig själv och problem med hur du ser på dig själv
-                och ditt värde.
-              </li>
-              <li>
-                Kris, trauma, sorg och förluster av olika slag, skilsmässa,
-                sjukdomar.
-              </li>
-              <li>
-                Livsomställningar: att gå ur gymnasiet, att bli förälder,
-                pensionering, arbetslöshet, att byta jobb, att flytta.
-              </li>
-            </ul>
-          </p>
+          <ul>
+            <li>Relationsproblem.</li>
+            <li>Ensamhet och svårigheter att skapa nära relationer.</li>
+            <li>
+              Stress, oro, ångest, sömnproblem, nedstämdhet och depression.
+            </li>
+            <li>
+              Höga krav på sig själv och problem med hur du ser på dig själv och
+              ditt värde.
+            </li>
+            <li>
+              Kris, trauma, sorg och förluster av olika slag, skilsmässa,
+              sjukdomar.
+            </li>
+            <li>
+              Livsomställningar: att gå ur gymnasiet, att bli förälder,
+              pensionering, arbetslöshet, att byta jobb, att flytta.
+            </li>
+          </ul>
           <p className="psykoterapi-content">
             Jag tar emot klienter som är över 18 år.{" "}
           </p>
@@ -126,9 +119,17 @@ const Psykoterapi = () => {
         <img
           className="img-psykologForetagarna"
           src={psykologforetagarnaLogo}
-          width={399}
+          width={300}
           height={202}
         />
+      </div>
+      <div className="priser-container">
+        <h5>Priser:</h5>
+        <p>Stardard: 45 minuter bedömningssamtal och samtalsterapi 600 kr</p>
+        <p>Student: 500 kr 45 minuter</p>
+        <p>Student: 350 kr 30 minuter</p>
+        <p>Seniorrabatt: 65+ 500 kr</p>
+        <p>Arbetssökande/sjukskriven: 500 kr</p>
       </div>
     </div>
   );
