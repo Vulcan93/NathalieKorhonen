@@ -1,7 +1,6 @@
 import "./Psykoterapi.css";
 import { useScrollRefs } from "../components/Layout";
 import blommor2 from "../../public/blommor2.jpg";
-import bicycle from "../../public/bicycle.jpg";
 import psykologforetagarnaLogo from "../../public/psykologforetagarna.png";
 const Psykoterapi = () => {
   const { psykoterapiRef } = useScrollRefs();
@@ -37,7 +36,6 @@ const Psykoterapi = () => {
         />
       </div>
       <div ref={psykoterapiRef} className="psykoterapi-container">
-        <img className="img-bicycle" src={bicycle} width={300} height={800} />
         <div className="psykoterapi-beskrivning">
           <h3>Psykoterapi</h3>
           <p className="psykoterapi-content">
@@ -55,7 +53,9 @@ const Psykoterapi = () => {
             relation, traumatisk händelse osv, och ibland är kontakten mer
             flytande och utforskande.
           </p>
-          <p>Psykoterapi passar dig som exempelvis önskar hjälp med:</p>
+          <p style={{ paddingTop: "1rem", paddingBottom: "1rem" }}>
+            Psykoterapi passar dig som exempelvis önskar hjälp med:
+          </p>
           <ul>
             <li>Relationsproblem.</li>
             <li>Ensamhet och svårigheter att skapa nära relationer.</li>

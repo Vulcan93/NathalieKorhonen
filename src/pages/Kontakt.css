@@ -56,6 +56,10 @@ textarea {
   margin: 0 auto;
 }
 
+textarea {
+  min-height: 100px;
+}
+
 .namn-label,
 .email-label,
 .textarea-label {

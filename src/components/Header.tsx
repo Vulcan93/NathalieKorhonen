@@ -8,7 +8,7 @@ export default function Header({ scrollToRef }: HeaderProps) {
   const [activeTab, setActiveTab] = useState("Hem");
   const [activeSection, setActiveSection] = useState("");
 
-  // tod: snygg till detta senare (använd en samma metod 3ggr)
+  // Todo: snygg till detta senare (använd en samma metod 3ggr)
 
   const handleHemTab = () => {
     scrollToRef("Hem");
@@ -33,8 +33,14 @@ export default function Header({ scrollToRef }: HeaderProps) {
 
   return (
     <header>
-      <nav>
-        <ul className="navbar-container">
+      <nav className="navbar-container">
+        <input type="checkbox" name="" id="" />
+        <div className="hamburger-lines">
+          <span className="line line1"></span>
+          <span className="line line2"></span>
+          <span className="line line3"></span>
+        </div>
+        <ul className="navbar-menu">
           <li>
             <Link
               className={

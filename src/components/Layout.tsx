@@ -16,7 +16,7 @@ export default function Layout() {
   const psykoterapiRef = useRef<HTMLDivElement | null>(null);
   const omMigRef = useRef<HTMLDivElement | null>(null);
   const kontaktRef = useRef<HTMLDivElement | null>(null);
-
+  hemRef.current?.scrollIntoView();
   const scrollToRef = (refName: string) => {
     switch (refName) {
       case "Hem":
@@ -26,17 +26,23 @@ export default function Layout() {
         break;
       case "OmMig":
         if (omMigRef.current) {
-          window.scrollTo(0, omMigRef.current.offsetTop - 80);
+          window.scrollTo({
+            top: omMigRef.current.offsetTop - 20,
+            behavior: "smooth",
+          });
         }
         break;
       case "Psykoterapi":
         if (psykoterapiRef.current) {
-          window.scrollTo(0, psykoterapiRef.current.offsetTop - 50);
+          window.scrollTo({
+            top: psykoterapiRef.current.offsetTop - 50,
+            behavior: "smooth",
+          });
         }
         break;
       case "Kontakt":
         if (kontaktRef.current) {
-          window.scrollTo(0, kontaktRef.current.offsetTop - 70);
+          kontaktRef.current.scrollIntoView({ behavior: "smooth" });
         }
         break;
       default:
