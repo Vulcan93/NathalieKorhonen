@@ -1,16 +1,15 @@
-/* .navbar-container {
-}
-
 .navbar-brand {
   padding-left: 3rem;
 }
-*/
+
 .navbar-menu {
   background-color: rgb(234, 228, 228);
   padding: 1rem;
   list-style: none;
   display: flex;
   justify-content: flex-end;
+  /* todo: vill hon ha dessa ?? */
+  box-shadow: 5px 0px 10px 0px #aaa;
   & li {
     float: right;
     text-align: center;
@@ -37,12 +36,14 @@
   padding-bottom: 17px;
 }
 
-.navbar-menu input {
+.navbar-container input {
   display: none;
 }
 
 @media (max-width: 480px) {
   .navbar-container {
+    background-color: rgb(234, 228, 228);
+    box-shadow: 5px 0px 10px 0px #aaa;
     display: block;
     position: fixed;
     height: 64px;
