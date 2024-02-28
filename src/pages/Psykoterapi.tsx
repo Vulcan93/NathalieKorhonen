@@ -2,6 +2,7 @@ import "./Psykoterapi.css";
 import { useScrollRefs } from "../components/Layout";
 import blommor2 from "../../public/blommor2.jpg";
 import psykologforetagarnaLogo from "../../public/psykologforetagarna.png";
+
 const Psykoterapi = () => {
   const { psykoterapiRef } = useScrollRefs();
   const { omMigRef } = useScrollRefs();

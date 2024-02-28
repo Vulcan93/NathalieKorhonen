@@ -7,4 +7,6 @@ export interface RefContextType {
 
 export interface HeaderProps {
   scrollToRef: (refName: string) => void;
+  highlightForRef: (refName: string) => void;
+  activeTab: string;
 }
