@@ -1,7 +1,14 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
-import { Suspense, createContext, useContext, useRef, useState } from "react";
+import {
+  Suspense,
+  createContext,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { RefContextType } from "../interfaces/Interface";
 
 const RefContext = createContext<RefContextType>({
@@ -16,8 +23,8 @@ export default function Layout() {
   const psykoterapiRef = useRef<HTMLDivElement | null>(null);
   const omMigRef = useRef<HTMLDivElement | null>(null);
   const kontaktRef = useRef<HTMLDivElement | null>(null);
-  // hemRef.current?.scrollIntoView();
-  const [activeTab, setActiveTab] = useState("");
+  const [activeTab, setActiveTab] = useState("Hem");
+
   const scrollToRef = (refName: string) => {
     switch (refName) {
       case "Hem":
@@ -51,18 +58,13 @@ export default function Layout() {
     }
   };
 
-  const handleKontaktTab = () => {
-    scrollToRef("Kontakt");
-    setActiveTab("Kontakt");
-  };
-
   return (
     <RefContext.Provider
       value={{ hemRef, omMigRef, psykoterapiRef, kontaktRef }}>
       <div id="homeSectionId" ref={hemRef}>
         <Header
           scrollToRef={scrollToRef}
-          highlightForRef={handleKontaktTab}
+          setActiveTab={setActiveTab}
           activeTab={activeTab}
         />
         <main>

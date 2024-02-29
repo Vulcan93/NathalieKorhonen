@@ -3,15 +3,13 @@ import PathConstants from "../routes/PathConstants";
 import "./Header.css";
 import { HeaderProps } from "../interfaces/Interface";
 import { RefObject, useEffect, useLayoutEffect, useRef, useState } from "react";
-import { useInView } from "react-intersection-observer";
 import { useScrollRefs } from "./Layout";
 
 export default function Header({
   scrollToRef,
-  highlightForRef,
   activeTab,
+  setActiveTab,
 }: HeaderProps) {
-  const [activeTab1, setActiveTab] = useState("Hem");
   // const [activeSection, setActiveSection] = useState("");
   // const [isVisible, setIsVisible] = useState(false);
   // const observerRef = useRef<IntersectionObserver | null>(null);
@@ -26,7 +24,6 @@ export default function Header({
   //   rootMargin: "0px",
   //   threshold: 1,
   // };
-  const { psykoterapiRef } = useScrollRefs();
 
   // Todo: snygg till detta senare (använd en samma metod 3ggr)
 
@@ -38,7 +35,6 @@ export default function Header({
   const handlePsykoterapiTab = () => {
     scrollToRef("Psykoterapi");
     setActiveTab("Psykoterapi");
-    // useScrollspy([""], 50);
   };
 
   const handleOmMigTab = () => {
@@ -49,7 +45,6 @@ export default function Header({
   const handleKontaktTab = () => {
     scrollToRef("Kontakt");
     setActiveTab("Kontakt");
-    highlightForRef("Kontakt");
   };
 
   return (
