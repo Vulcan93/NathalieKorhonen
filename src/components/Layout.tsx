@@ -24,7 +24,7 @@ export default function Layout() {
   const omMigRef = useRef<HTMLDivElement | null>(null);
   const kontaktRef = useRef<HTMLDivElement | null>(null);
   const [activeTab, setActiveTab] = useState("Hem");
-
+  
   const scrollToRef = (refName: string) => {
     switch (refName) {
       case "Hem":
@@ -34,7 +34,7 @@ export default function Layout() {
         break;
       case "OmMig":
         if (omMigRef.current) {
-          window.scrollTo({
+                    window.scrollTo({
             top: omMigRef.current.offsetTop - 20,
             behavior: "smooth",
           });
@@ -42,7 +42,7 @@ export default function Layout() {
         break;
       case "Psykoterapi":
         if (psykoterapiRef.current) {
-          window.scrollTo({
+                    window.scrollTo({
             top: psykoterapiRef.current.offsetTop - 50,
             behavior: "smooth",
           });
@@ -57,11 +57,92 @@ export default function Layout() {
         break;
     }
   };
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(([entry]) => {
+  //     setIsOnScreen(entry.isIntersecting);
+  //     if (entry.isIntersecting) {
+  //       console.log("first");
+  //       setActiveTab("navbar-item active");
+  //     } else {
+  //       console.log("meepo");
+  //       setActiveTab("navbar-item");
+  //     }
+  //   });
+
+  //   if (hemRef.current) observer.observe(hemRef.current);
+  //   if (omMigRef.current) observer.observe(omMigRef.current);
+  //   if (psykoterapiRef.current) observer.observe(psykoterapiRef.current);
+  //   if (kontaktRef.current) observer.observe(kontaktRef.current);
+  //   return () => {
+  //     observer.disconnect();
+  //   };
+  // }, [setActiveTab]);
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           // setActiveSection(entry.target.id);
+  //           setActiveTab(entry.target.id);
+  //           console.log("Intersecting: ", entry.target);
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0 }
+  //   );
+
+  //   if (hemRef.current) observer.observe(hemRef.current);
+  //   if (omMigRef.current) observer.observe(omMigRef.current);
+  //   if (psykoterapiRef.current) observer.observe(psykoterapiRef.current);
+  //   if (kontaktRef.current) observer.observe(kontaktRef.current);
+
+  //   return () => {
+  //     observer.disconnect();
+  //   };
+  // }, [setActiveTab]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log("Intersection observer entry:", entry);
+          switch (entry.target.id) {
+            case "hemSectionId":
+              setActiveTab("Hem");
+              break;
+            case "omMigSectionId":
+              setActiveTab("OmMig");
+              break;
+            case "psykoterapiSectionId":
+              setActiveTab("Psykoterapi");
+              break;
+            case "kontaktSectionId":
+              setActiveTab("Kontakt");
+              break;
+            default:
+              setActiveTab("");
+              break;
+          }
+        }
+      });
+    });
+
+    // Observe the sections
+    if (hemRef.current) observer.observe(hemRef.current);
+    if (omMigRef.current) observer.observe(omMigRef.current);
+    if (psykoterapiRef.current) observer.observe(psykoterapiRef.current);
+    if (kontaktRef.current) observer.observe(kontaktRef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <RefContext.Provider
       value={{ hemRef, omMigRef, psykoterapiRef, kontaktRef }}>
-      <div id="homeSectionId" ref={hemRef}>
+      <div id="hemSectionId" ref={hemRef}>
         <Header
           scrollToRef={scrollToRef}
           setActiveTab={setActiveTab}

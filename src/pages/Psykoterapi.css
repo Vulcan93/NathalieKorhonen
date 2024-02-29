@@ -52,6 +52,7 @@
 
 .psykoterapi-content {
   text-align: center;
+  padding-top: 1rem;
 }
 
 /* Psykolog foretagarna section: */
@@ -74,9 +75,10 @@
 
 .img-psykologForetagarna {
   border: solid rgb(134, 42, 165);
-  height: auto;
+  /* height: auto; */
   margin-top: 1rem;
   min-width: 240px;
+  max-height: 500pxs;
 }
 
 /* Pris section: */

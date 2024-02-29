@@ -11,7 +11,7 @@ const Hem = () => {
         <p>Psykologmottagning Nathalie Korhonen</p>
       </div>
       <section className="hem-container">
-        <img className="img-profilbild" src={profilbild} alt="profilbild" />
+        <img className="img-profilbild" src={profilbild} alt="bild" />
         <div className="hem-beskrivning">
           <article>
             <h1 className="visuallyhidden"></h1>

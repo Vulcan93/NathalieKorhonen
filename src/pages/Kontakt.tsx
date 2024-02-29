@@ -6,30 +6,34 @@ const Kontakt = () => {
   const { kontaktRef } = useScrollRefs();
 
   return (
-    <div ref={kontaktRef}>
+    <div id="kontaktSectionId" ref={kontaktRef}>
       <div className="kontakt-container">
         {/* <div className="kontakt-img-container"> */}
-        <img
+        {/* <img
           className="img-kontakt"
           src={blommor1}
           alt="todopicture/100px250"
           width={240}
           height={400}
           loading="lazy"
-        />
+        /> */}
         {/* </div> */}
         <div className="kontakt-info">
           <h4 className="kontakt-h3">Kontakt</h4>
-          <p>Om du vill komma i kontakt med mig och har frågor</p>
+          <p>Vid frågor är du välkommen att maila mig på </p>
           <div className="span-container">
             <span>
-              Email:
-              <br />
+              {/* Email:
+              <br /> */}
               <a href="mailto:nathaliekorhonen.psykolog@gmail.com">
                 nathaliekorhonen.psykolog@gmail.com
               </a>
             </span>
           </div>
+          <p>
+            Om du skulle vilja boka ett första samtal vänliga fyll i
+            intresseanmälan nedan
+          </p>
         </div>
       </div>
       <div>
@@ -44,7 +48,7 @@ const Kontakt = () => {
           </label>
           <div className="textarea-label">
             <label>
-              Kort beskrivning om vad ärendet gäller: <textarea />
+              Kort beskrivning om vad ditt ärendet gäller: <textarea />
             </label>
             <button>Skicka</button>
           </div>

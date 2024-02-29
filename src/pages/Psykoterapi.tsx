@@ -2,6 +2,7 @@ import "./Psykoterapi.css";
 import { useScrollRefs } from "../components/Layout";
 import blommor2 from "../../public/blommor2.jpg";
 import psykologforetagarnaLogo from "../../public/psykologforetagarna.png";
+import { useEffect, useState } from "react";
 
 const Psykoterapi = () => {
   const { psykoterapiRef } = useScrollRefs();
@@ -9,7 +10,7 @@ const Psykoterapi = () => {
 
   return (
     <div>
-      <div ref={omMigRef} className="text-container">
+      <div id="omMigSectionId" ref={omMigRef} className="text-container">
         <div className="om-mig-beskrivning">
           <h2>Om mig</h2>
           <p>
@@ -36,9 +37,13 @@ const Psykoterapi = () => {
           height={900}
         />
       </div>
-      <div ref={psykoterapiRef} className="psykoterapi-container">
+      <div
+        // id="psykoterapiSectionId"
+        ref={psykoterapiRef}
+        className="psykoterapi-container">
         <div className="psykoterapi-beskrivning">
           <h3>Psykoterapi</h3>
+          <div className="priser-container"></div>
           <p className="psykoterapi-content">
             Alla kan vi ibland vara i behov av att få prata med någon
             utomstående om hur vi har det. Tillsammans med någon annan
@@ -76,6 +81,7 @@ const Psykoterapi = () => {
               pensionering, arbetslöshet, att byta jobb, att flytta.
             </li>
           </ul>
+
           <p className="psykoterapi-content">
             Jag tar emot klienter som är över 18 år.{" "}
           </p>
@@ -84,6 +90,9 @@ const Psykoterapi = () => {
             samtalsplattformen Kaddio. Innan vårt samtal loggar du in med
             BankID. Inom en snar framtid kommer jag också kunna erbjuda fysiska
             besök i centrala Göteborg.
+          </p>
+          <p className="psykoterapi-content">
+            Pris: 850 kr (45 minuter samtal)
           </p>
         </div>
       </div>
@@ -106,7 +115,6 @@ const Psykoterapi = () => {
             </li>
             <li>Jag står under tillsyn av Inspektionen för vård och omsorg.</li>
             <li>Jag behandlar dina personuppgifter enligt GDPR.</li>
-            <li>Jag får regelbunden handledning på mitt arbete.</li>
             <p>
               Som medlem av Sveriges psykologförbund och Psykologföretagarna i
               Sverige arbetar jag enligt förbundets yrkesetiska principer för
@@ -123,14 +131,6 @@ const Psykoterapi = () => {
           width={300}
           height={202}
         />
-      </div>
-      <div className="priser-container">
-        <h5>Priser:</h5>
-        <p>Stardard: 45 minuter bedömningssamtal och samtalsterapi 600 kr</p>
-        <p>Student: 500 kr 45 minuter</p>
-        <p>Student: 350 kr 30 minuter</p>
-        <p>Seniorrabatt: 65+ 500 kr</p>
-        <p>Arbetssökande/sjukskriven: 500 kr</p>
       </div>
     </div>
   );
