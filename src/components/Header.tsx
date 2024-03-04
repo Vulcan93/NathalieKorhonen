@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import PathConstants from "../routes/PathConstants";
 import "./Header.css";
 import { HeaderProps } from "../interfaces/Interface";
-import { RefObject, useEffect, useLayoutEffect, useRef, useState } from "react";
-import { useScrollRefs } from "./Layout";
+// import { RefObject, useEffect, useLayoutEffect, useRef, useState } from "react";
+// import { useScrollRefs } from "./Layout";
 
 export default function Header({
   scrollToRef,
@@ -63,7 +63,8 @@ export default function Header({
                 activeTab === "Hem" ? "navbar-item active" : "navbar-item"
               }
               to={PathConstants.Hem}
-              onClick={() => handleHemTab()}>
+              onClick={() => handleHemTab()}
+            >
               Startsida
             </Link>
           </li>
@@ -73,7 +74,8 @@ export default function Header({
                 activeTab === "OmMig" ? "navbar-item active" : "navbar-item"
               }
               to={PathConstants.Hem}
-              onClick={() => handleOmMigTab()}>
+              onClick={() => handleOmMigTab()}
+            >
               Om Mig
             </Link>
           </li>
@@ -85,7 +87,8 @@ export default function Header({
                   : "navbar-item"
               }
               to={PathConstants.Hem}
-              onClick={() => handlePsykoterapiTab()}>
+              onClick={() => handlePsykoterapiTab()}
+            >
               Om Psykoterapi
             </Link>
           </li>
@@ -96,7 +99,8 @@ export default function Header({
                 activeTab === "Kontakt" ? "navbar-item active" : "navbar-item"
               }
               to={PathConstants.Hem}
-              onClick={() => handleKontaktTab()}>
+              onClick={() => handleKontaktTab()}
+            >
               Kontakt
             </Link>
           </li>

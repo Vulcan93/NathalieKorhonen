@@ -2,7 +2,7 @@ import "./Psykoterapi.css";
 import { useScrollRefs } from "../components/Layout";
 import blommor2 from "../../public/blommor2.jpg";
 import psykologforetagarnaLogo from "../../public/psykologforetagarna.png";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 const Psykoterapi = () => {
   const { psykoterapiRef } = useScrollRefs();
@@ -40,7 +40,8 @@ const Psykoterapi = () => {
       <div
         // id="psykoterapiSectionId"
         ref={psykoterapiRef}
-        className="psykoterapi-container">
+        className="psykoterapi-container"
+      >
         <div className="psykoterapi-beskrivning">
           <h3>Psykoterapi</h3>
           <div className="priser-container"></div>
