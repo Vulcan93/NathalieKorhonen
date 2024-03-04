@@ -1,5 +1,5 @@
 import "./Kontakt.css";
-import blommor1 from "../../public/blommor1.jpg";
+// import blommor1 from "../../public/blommor1.jpg";
 import { useScrollRefs } from "../components/Layout";
 
 const Kontakt = () => {
