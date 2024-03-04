@@ -7,7 +7,7 @@
 }
 
 .img-kontakt {
-  border: solid brown;
+  /* border: solid brown; */
   /* margin-top: 20px;
   margin-bottom: 20px; */
   margin: auto;
@@ -23,7 +23,7 @@
 
 .kontakt-info {
   margin-top: 2rem;
-  border: solid blue;
+  /* border: solid blue; */
   flex: 1;
   & h4 {
     font-size: 2rem;
@@ -44,7 +44,7 @@
 }
 
 .form-container {
-  border: solid blue;
+  /* border: solid blue; */
   text-align: center;
 }
 
