@@ -1,6 +1,6 @@
 import "./Psykoterapi.css";
 import { useScrollRefs } from "../components/Layout";
-import blommor2 from "../../public/blommor2.jpg";
+import blommor from "../../public/blommor.jpg";
 import psykologforetagarnaLogo from "../../public/psykologforetagarna.png";
 // import { useEffect, useState } from "react";
 
@@ -31,7 +31,7 @@ const Psykoterapi = () => {
         </div>
         <img
           className="img-psykoterapi-blommor"
-          src={blommor2}
+          src={blommor}
           alt="blommor2"
           width={300}
           height={900}

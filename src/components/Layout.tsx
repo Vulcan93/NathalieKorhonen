@@ -24,7 +24,7 @@ export default function Layout() {
   const omMigRef = useRef<HTMLDivElement | null>(null);
   const kontaktRef = useRef<HTMLDivElement | null>(null);
   const [activeTab, setActiveTab] = useState("Hem");
-  
+
   const scrollToRef = (refName: string) => {
     switch (refName) {
       case "Hem":
@@ -34,7 +34,7 @@ export default function Layout() {
         break;
       case "OmMig":
         if (omMigRef.current) {
-                    window.scrollTo({
+          window.scrollTo({
             top: omMigRef.current.offsetTop - 20,
             behavior: "smooth",
           });
@@ -42,7 +42,7 @@ export default function Layout() {
         break;
       case "Psykoterapi":
         if (psykoterapiRef.current) {
-                    window.scrollTo({
+          window.scrollTo({
             top: psykoterapiRef.current.offsetTop - 50,
             behavior: "smooth",
           });
@@ -106,7 +106,7 @@ export default function Layout() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          console.log("Intersection observer entry:", entry);
+          // console.log("Intersection observer entry:", entry);
           switch (entry.target.id) {
             case "hemSectionId":
               setActiveTab("Hem");
@@ -141,7 +141,8 @@ export default function Layout() {
 
   return (
     <RefContext.Provider
-      value={{ hemRef, omMigRef, psykoterapiRef, kontaktRef }}>
+      value={{ hemRef, omMigRef, psykoterapiRef, kontaktRef }}
+    >
       <div id="hemSectionId" ref={hemRef}>
         <Header
           scrollToRef={scrollToRef}

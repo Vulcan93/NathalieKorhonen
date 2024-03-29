@@ -1,30 +1,46 @@
 import "./Kontakt.css";
-// import blommor1 from "../../public/blommor1.jpg";
 import { useScrollRefs } from "../components/Layout";
+import emailjs from "@emailjs/browser";
+import { FormEvent, useRef } from "react";
 
 const Kontakt = () => {
   const { kontaktRef } = useScrollRefs();
 
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: FormEvent) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_TEMPLATE_ID,
+          form.current,
+          {
+            publicKey: import.meta.env.VITE_PUBLIC_KEY,
+          }
+        )
+        .then(
+          (result) => {
+            console.log("SUCCESS!", result.text);
+            alert("Your message has been sent!");
+            form.current?.reset();
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
+    }
+  };
   return (
     <div id="kontaktSectionId" ref={kontaktRef}>
       <div className="kontakt-container">
-        {/* <div className="kontakt-img-container"> */}
-        {/* <img
-          className="img-kontakt"
-          src={blommor1}
-          alt="todopicture/100px250"
-          width={240}
-          height={400}
-          loading="lazy"
-        /> */}
-        {/* </div> */}
         <div className="kontakt-info">
           <h4 className="kontakt-h3">Kontakt</h4>
           <p>Vid frågor är du välkommen att maila mig på </p>
           <div className="span-container">
             <span>
-              {/* Email:
-              <br /> */}
               <a href="mailto:nathaliekorhonen.psykolog@gmail.com">
                 nathaliekorhonen.psykolog@gmail.com
               </a>
@@ -37,18 +53,24 @@ const Kontakt = () => {
         </div>
       </div>
       <div>
-        <form className="form-container">
+        <form ref={form} className="form-container" onSubmit={sendEmail}>
           <div className="namn-label">
             <label>
-              Namn: <input type="text" />
+              Namn: <input type="text" name="user_firstName" />
+            </label>
+          </div>
+          <div className="efternamn-label">
+            <label>
+              Efternamn: <input type="text" name="user_lastName" required />
             </label>
           </div>
           <label className="email-label">
-            Email: <input type="email" />
+            Email: <input type="email" name="user_email" required />
           </label>
           <div className="textarea-label">
             <label>
-              Kort beskrivning om vad ditt ärendet gäller: <textarea />
+              Kort beskrivning om vad ditt ärendet gäller:
+              <textarea name="message" required />
             </label>
             <button>Skicka</button>
           </div>

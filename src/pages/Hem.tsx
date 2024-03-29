@@ -1,9 +1,6 @@
 import "./Hem.css";
 import profilbild from "../../public/profilbild.jpg";
 
-//Todo: reda ut alt biten
-// Todo: hidden virtual grejs
-
 const Hem = () => {
   return (
     <div>
@@ -25,8 +22,6 @@ const Hem = () => {
             </p>
           </article>
         </div>
-
-        {/* <ScrollRestoration /> */}
       </section>
     </div>
   );
