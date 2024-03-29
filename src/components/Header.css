@@ -7,6 +7,7 @@
   padding: 1rem;
   list-style: none;
   display: flex;
+  display: -webkit-flex;
   justify-content: flex-end;
   /* todo: vill hon ha dessa ?? */
   box-shadow: 0px 0px 10px 0px #aaa;
@@ -105,6 +106,7 @@
     transform: translate(100%);
     -webkit-transform: translate(100%);
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     margin-left: auto;
     justify-content: flex-start;
