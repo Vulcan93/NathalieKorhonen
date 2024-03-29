@@ -103,6 +103,7 @@
     height: 100vh;
     max-width: 300px;
     transform: translate(100%);
+    -webkit-transform: translate(100%);
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -119,6 +120,7 @@
   }
 
   .navbar-container input[type="checkbox"]:checked ~ .navbar-menu {
+    -webkit-transform: translate(30%);
     transform: translateX(30%);
   }
 
