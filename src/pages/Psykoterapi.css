@@ -6,7 +6,6 @@
 }
 
 .om-mig-beskrivning {
-  text-align: center;
   /* border: solid blue; */
   flex: 1;
   padding-top: 5rem;
@@ -45,13 +44,11 @@
   padding: 2rem;
   & h3 {
     font-size: 2rem;
-    text-align: center;
     line-height: 3rem;
   }
 }
 
 .psykoterapi-content {
-  text-align: center;
   padding-top: 1rem;
 }
 

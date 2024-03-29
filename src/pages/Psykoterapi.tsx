@@ -21,12 +21,10 @@ const Psykoterapi = () => {
             behov och förutsättningar. Att arbeta integrativt kan exempelvis
             vara genom att i en psykodynamisk terapi med fokus på exempelvis
             uppväxt och relationer också kombinera med hemuppgifter för att
-            öva/utmana dig mellan våra samtal. Eller i en mer kognitiv
-            beteendeterapi grundad terapi se till att det finns utrymme för att
-            också samtala om ev. minnen/känslor från barndomen som uppkommer
-            under våra samtal. Jag tror på vikten av en trygg relation mellan
-            dig och din psykolog/terapeut för att skapa bra förutsättningar för
-            att våga utforska och prata om känslor som väcks.
+            öva/utmana dig mellan våra samtal. Jag tror på vikten av en trygg
+            relation mellan dig och din psykolog för att skapa bra
+            förutsättningar för att våga utforska och prata om känslor som
+            väcks.
           </p>
         </div>
         <img
@@ -46,19 +44,18 @@ const Psykoterapi = () => {
           <h3>Psykoterapi</h3>
           <div className="priser-container"></div>
           <p className="psykoterapi-content">
-            Alla kan vi ibland vara i behov av att få prata med någon
-            utomstående om hur vi har det. Tillsammans med någon annan
-            reflektera kring ens val och livssituation. Ibland söker man en
-            tydlig förändring, och ibland är målet att förstå sig själv bättre.
-            Psykoterapi handlar i stort om att utforska det som blir svårt för
-            dig här och nu och vilka mönster i ditt liv som kanske behöver
-            förändras. Ett tydligt mål inom psykoterapi är att öka din
-            förståelse kring dig själv så att du ska kunna ta mer medvetna val
-            som rör ditt liv. I samtalen reflekterar vi tillsammans och du får
-            en möjlighet att i din egen takt utforska, förstå och förändra.
-            Ibland har vi ett tydligt fokus i vår kontakt, ex. en separation,
-            relation, traumatisk händelse osv, och ibland är kontakten mer
-            flytande och utforskande.
+            Alla kan ibland vara i behov av att få prata med någon utomstående
+            om hur man har det. Tillsammans med någon annan reflektera kring ens
+            val och livssituation. Ibland söker man en tydlig förändring, och
+            ibland är målet att förstå sig själv bättre. Psykoterapi handlar i
+            stort om att utforska det som blir svårt för dig här och nu och
+            vilka mönster i ditt liv som kanske behöver förändras. Ett tydligt
+            mål inom psykoterapi är att öka din förståelse kring dig själv så
+            att du ska kunna ta mer medvetna val som rör ditt liv. I samtalen
+            reflekterar vi tillsammans och du får en möjlighet att i din egen
+            takt utforska, förstå och förändra. Ibland har vi ett tydligt fokus
+            i vår kontakt, ex. en separation, relation, traumatisk händelse osv,
+            och ibland är kontakten mer flytande och utforskande.
           </p>
           <p style={{ paddingTop: "1rem", paddingBottom: "1rem" }}>
             Psykoterapi passar dig som exempelvis önskar hjälp med:
@@ -84,7 +81,7 @@ const Psykoterapi = () => {
           </ul>
 
           <p className="psykoterapi-content">
-            Jag tar emot klienter som är över 18 år.{" "}
+            Jag tar emot klienter som är över 18 år.
           </p>
           <p className="psykoterapi-content">
             Just nu erbjuder jag endast psykoterapi genom digitala samtal via
