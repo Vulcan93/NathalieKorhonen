@@ -4,39 +4,25 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 5rem;
+  margin-bottom: 1rem;
+  margin: 2rem;
 }
-
-.img-kontakt {
-  /* border: solid brown; */
-  /* margin-top: 20px;
-  margin-bottom: 20px; */
-  margin: auto;
-  min-width: 240px;
-  height: auto;
-}
-
-/* .kontakt-img-container {
-  margin-right: 2rem;
-  padding: 1rem;
-  flex: 1;
-} */
 
 .kontakt-info {
   margin-top: 2rem;
-  /* border: solid blue; */
   flex: 1;
   & h4 {
     font-size: 2rem;
-    text-align: center;
     line-height: 3rem;
   }
   & p {
-    text-align: center;
+    /* text-align: center; */
   }
 }
 
 .span-container {
-  text-align: center;
+  /* text-align: center; */
+  margin-top: 1rem;
   margin-bottom: 1rem;
   & a {
     text-decoration: none;
@@ -44,14 +30,11 @@
 }
 
 .form-container {
-  /* border: solid blue; */
-  text-align: center;
+  /* text-align: center; */
 }
 
-input,
-label,
 textarea {
-  display: block;
+  /* display: block; */
   width: 80%;
   margin: 0 auto;
 }
@@ -60,9 +43,60 @@ textarea {
   min-height: 100px;
 }
 
-.namn-label,
-.email-label,
-.textarea-label {
+.form-label {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  margin: 0;
+  & label {
+    padding-left: 1rem;
+  }
+  & input {
+    width: 50%;
+    border: 2px solid #938484;
+    border-radius: 6px;
+    padding: 12px;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.form-email-label {
+  padding-left: 1rem;
+  & label {
+    padding-left: 1rem;
+  }
+  & input {
+    width: 50%;
+    border: 2px solid #938484;
+    border-radius: 6px;
+    padding: 12px;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.form-label,
+.textarea-container {
   line-height: 2rem;
   text-align: center;
+}
+
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+  & textarea {
+    border: 2px solid #938484;
+    border-radius: 6px;
+  }
+}
+
+.btn-submit {
+  border-radius: 6px;
+  width: 30%;
+  border: none;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(190, 187, 181);
 }

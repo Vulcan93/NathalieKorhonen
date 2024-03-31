@@ -31,8 +31,8 @@ const Psykoterapi = () => {
           className="img-psykoterapi-blommor"
           src={blommor}
           alt="blommor2"
-          width={300}
-          height={900}
+          width={255}
+          height={400}
         />
       </div>
       <div
@@ -57,10 +57,10 @@ const Psykoterapi = () => {
             i vår kontakt, ex. en separation, relation, traumatisk händelse osv,
             och ibland är kontakten mer flytande och utforskande.
           </p>
-          <p style={{ paddingTop: "1rem", paddingBottom: "1rem" }}>
+          <p className="psykoterapi-one-liner-content">
             Psykoterapi passar dig som exempelvis önskar hjälp med:
           </p>
-          <ul>
+          <ul className="psykoterapi-content">
             <li>Relationsproblem.</li>
             <li>Ensamhet och svårigheter att skapa nära relationer.</li>
             <li>
@@ -126,8 +126,8 @@ const Psykoterapi = () => {
         <img
           className="img-psykologForetagarna"
           src={psykologforetagarnaLogo}
-          width={300}
-          height={202}
+          width={255}
+          height={150}
         />
       </div>
     </div>

@@ -6,14 +6,10 @@
 }
 
 .om-mig-beskrivning {
-  /* border: solid blue; */
   flex: 1;
   padding-top: 5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5rem;
+  padding-left: auto;
+  padding-right: auto;
   min-width: 240px;
   & h2 {
     line-height: 3rem;
@@ -21,12 +17,10 @@
 }
 
 .img-psykoterapi-blommor {
-  /* border: solid blue; */
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   flex: 0.5;
-  margin-top: 5rem;
+  padding-top: 4rem;
 }
 
 /* Om psykoterapi section: */
@@ -38,9 +32,7 @@
 }
 
 .psykoterapi-beskrivning {
-  /* border: solid blue; */
   flex: 1;
-  margin: 2rem;
   padding: 2rem;
   & h3 {
     font-size: 2rem;
@@ -50,6 +42,11 @@
 
 .psykoterapi-content {
   padding-top: 1rem;
+}
+
+.psykoterapi-one-liner-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* Psykolog foretagarna section: */
@@ -63,7 +60,6 @@
 }
 
 .psykologForetagarna-content {
-  /* border: solid rgb(134, 42, 165); */
   flex: 1;
   & li {
     margin-left: 1rem;
@@ -71,9 +67,7 @@
 }
 
 .img-psykologForetagarna {
-  /* border: solid rgb(134, 42, 165); */
-  /* height: auto; */
-  margin-top: 1rem;
+  padding-top: 2rem;
   min-width: 240px;
   max-height: 500pxs;
 }
