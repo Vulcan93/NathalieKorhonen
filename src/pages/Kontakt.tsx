@@ -52,27 +52,25 @@ const Kontakt = () => {
           </p>
         </div>
       </div>
-      <div>
-        <form ref={form} className="form-container" onSubmit={sendEmail}>
-          <div className="form-label">
-            <label />
-            Namn: <input type="text" name="user_firstName" />
-          </div>
-          <div className="form-email-label">
-            <label />
-            Efternamn: <input type="text" name="user_lastName" required />
-          </div>
-          <div className="form-label">
-            <label />
-            Email: <input type="email" name="user_email" required />
-          </div>
-          <div className="textarea-container">
-            <label>Kort beskrivning om vad ditt ärendet gäller:</label>
-            <textarea name="message" required />
-            <button className="btn-submit">Skicka</button>
-          </div>
-        </form>
-      </div>
+      <form ref={form} className="form-container" onSubmit={sendEmail}>
+        <div className="form-label">
+          <label />
+          Namn: <input type="text" name="user_firstName" />
+        </div>
+        <div className="form-email-label">
+          <label />
+          Efternamn: <input type="text" name="user_lastName" required />
+        </div>
+        <div className="form-label">
+          <label />
+          Email: <input type="email" name="user_email" required />
+        </div>
+        <div className="textarea-container">
+          <label>Kort beskrivning om vad ditt ärendet gäller:</label>
+          <textarea name="message" required />
+          <button className="btn-submit">Skicka</button>
+        </div>
+      </form>
     </div>
   );
 };

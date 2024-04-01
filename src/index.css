@@ -69,11 +69,36 @@ header {
     padding-left: 1rem;
     min-width: 240px;
     max-height: 500pxs;
-    border: solid yellow;
+    /* border: solid yellow; */
+  }
+
+  .kontakt-container,
+  .form-container {
+    padding-left: 2rem;
+  }
+
+  .form-label,
+  .form-email-label {
+    padding: 0;
+    & input {
+      max-width: 40%;
+    }
+  }
+
+  .btn-submit {
+    width: 10%;
+    padding: 0.5rem;
+    margin: 1rem;
   }
 }
 @media only screen and (min-width: 1440px) {
   /* styles for browsers larger than 1440px; */
+
+  .navbar-menu {
+    & li {
+      font-size: 20px;
+    }
+  }
 
   .img-profilbild {
     max-width: 400px;
@@ -129,11 +154,41 @@ header {
     padding-left: 1rem;
     min-width: 240px;
     max-height: 500pxs;
-    border: solid purple;
+    /* border: solid purple; */
+  }
+
+  .kontakt-container,
+  .form-container {
+    font-size: 22px;
+    padding-left: 4rem;
+  }
+  .textarea-container {
+    & button {
+      font-size: 18px;
+    }
+  }
+
+  .form-label,
+  .form-email-label {
+    & input {
+      max-width: 40%;
+    }
+  }
+
+  .btn-submit {
+    width: 10%;
+    padding: 1rem;
+    margin: 1rem;
   }
 }
 @media only screen and (min-width: 2000px) {
   /* for sumo sized (mac) screens */
+
+  .navbar-menu {
+    & li {
+      font-size: 32px;
+    }
+  }
 
   .img-profilbild {
     max-width: 500px;
@@ -190,7 +245,33 @@ header {
     padding-right: 14rem;
     min-width: 240px;
     max-height: 500pxs;
-    border: solid pink;
+    /* border: solid pink; */
+  }
+
+  .kontakt-container,
+  .form-container {
+    font-size: 24px;
+    padding-left: 4rem;
+  }
+  .textarea-container {
+    & button {
+      font-size: 20px;
+    }
+  }
+
+  .form-label,
+  .form-email-label {
+    padding: 0;
+    padding-left: 2rem;
+    & input {
+      max-width: 40%;
+    }
+  }
+
+  .btn-submit {
+    width: 10%;
+    padding: 1rem;
+    margin: 1rem;
   }
 }
 @media only screen and (max-device-width: 480px) {
@@ -226,6 +307,19 @@ header {
     min-width: 240px;
     max-height: 500pxs;
   }
+
+  .form-label,
+  .form-email-label {
+    & input {
+      max-width: 40%;
+    }
+  }
+
+  .btn-submit {
+    width: 30%;
+    padding: 0.5rem;
+    margin: 1rem;
+  }
 }
 @media only screen and (device-width: 768px) {
   /* default iPad screens */
@@ -236,7 +330,7 @@ header {
     padding-top: 2rem;
     min-width: 240px;
     max-height: 500pxs;
-    border: solid red;
+    /* border: solid red; */
   }
 }
 /* different techniques for iPad screening */
@@ -270,8 +364,22 @@ header {
     padding-left: 1rem;
     min-width: 240px;
     max-height: 500pxs;
-    border: solid green;
+    /* border: solid green; */
     flex: 1;
+  }
+
+  .form-label,
+  .form-email-label {
+    padding: 0;
+    & input {
+      max-width: 40%;
+    }
+  }
+
+  .btn-submit {
+    width: 22%;
+    padding: 0.5rem;
+    margin: 1rem;
   }
 }
 
@@ -323,7 +431,7 @@ header {
     padding-left: 1rem;
     min-width: 240px;
     max-height: 500pxs;
-    border: solid blue;
+    /* border: solid blue; */
     flex: 1;
   }
 }
