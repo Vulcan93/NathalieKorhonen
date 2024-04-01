@@ -2,12 +2,13 @@ import "./Kontakt.css";
 import { useScrollRefs } from "../components/Layout";
 import emailjs from "@emailjs/browser";
 import { FormEvent, useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Kontakt = () => {
   const { kontaktRef } = useScrollRefs();
 
   const form = useRef<HTMLFormElement>(null);
-
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
 
@@ -23,12 +24,11 @@ const Kontakt = () => {
         )
         .then(
           (result) => {
-            console.log("SUCCESS!", result.text);
-            alert("Your message has been sent!");
+            toast.success("Meddelandet har skickat!");
             form.current?.reset();
           },
           (error) => {
-            console.log("FAILED...", error.text);
+            toast.error("Meddelandet har inte skickat!");
           }
         );
     }
@@ -69,6 +69,7 @@ const Kontakt = () => {
           <label>Kort beskrivning om vad ditt ärendet gäller:</label>
           <textarea name="message" required />
           <button className="btn-submit">Skicka</button>
+          <ToastContainer />
         </div>
       </form>
     </div>
