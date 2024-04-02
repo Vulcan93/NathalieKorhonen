@@ -23,11 +23,11 @@ const Kontakt = () => {
           }
         )
         .then(
-          (result) => {
+          () => {
             toast.success("Meddelandet har skickat!");
             form.current?.reset();
           },
-          (error) => {
+          () => {
             toast.error("Meddelandet har inte skickat!");
           }
         );
