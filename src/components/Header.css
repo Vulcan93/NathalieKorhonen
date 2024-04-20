@@ -41,7 +41,7 @@
 }
 
 @media (max-width: 481px) {
-  .navbar-container {
+  /* .navbar-container {
     background-color: rgb(234, 228, 228);
     box-shadow: 0px 0px 10px 0px #aaa;
     display: block;
@@ -137,5 +137,5 @@
   .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform-origin: right;
     transform: rotate(34deg);
-  }
+  } */
 }
