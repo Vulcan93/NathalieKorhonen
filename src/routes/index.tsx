@@ -9,9 +9,9 @@ const routes = [
     path: "/",
     element: (
       <>
-        <Hem />
+        {/* <Hem /> */}
         <Psykoterapi />
-        <Kontakt />
+        {/* <Kontakt /> */}
       </>
     ),
   },
