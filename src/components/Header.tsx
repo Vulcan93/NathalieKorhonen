@@ -6,10 +6,10 @@ import { HeaderProps } from "../interfaces/Interface";
 // import { useScrollRefs } from "./Layout";
 
 export default function Header({
-  scrollToRef,
+  // scrollToRef,
   activeTab,
-  setActiveTab,
-}: HeaderProps) {
+}: // setActiveTab,
+HeaderProps) {
   // const [activeSection, setActiveSection] = useState("");
   // const [isVisible, setIsVisible] = useState(false);
   // const observerRef = useRef<IntersectionObserver | null>(null);
