@@ -1,8 +1,10 @@
+import { RefObject } from "react";
+
 export interface RefContextType {
-  hemRef: React.RefObject<HTMLDivElement>;
-  psykoterapiRef: React.RefObject<HTMLDivElement>;
-  omMigRef: React.RefObject<HTMLDivElement>;
-  kontaktRef: React.RefObject<HTMLDivElement>;
+  hemRef: RefObject<HTMLDivElement>;
+  psykoterapiRef: RefObject<HTMLDivElement>;
+  omMigRef: RefObject<HTMLDivElement>;
+  kontaktRef: RefObject<HTMLDivElement>;
 }
 
 export interface HeaderProps {

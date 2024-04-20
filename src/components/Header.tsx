@@ -28,23 +28,23 @@ export default function Header({
   // Todo: snygg till detta senare (använd en samma metod 3ggr)
 
   const handleHemTab = () => {
-    scrollToRef("Hem");
-    setActiveTab("Hem");
+    // scrollToRef("Hem");
+    // setActiveTab("Hem");
   };
 
   const handlePsykoterapiTab = () => {
-    scrollToRef("Psykoterapi");
-    setActiveTab("Psykoterapi");
+    // scrollToRef("Psykoterapi");
+    // setActiveTab("Psykoterapi");
   };
 
   const handleOmMigTab = () => {
-    scrollToRef("OmMig");
-    setActiveTab("OmMig");
+    // scrollToRef("OmMig");
+    // setActiveTab("OmMig");
   };
 
   const handleKontaktTab = () => {
-    scrollToRef("Kontakt");
-    setActiveTab("Kontakt");
+    // scrollToRef("Kontakt");
+    // setActiveTab("Kontakt");
   };
 
   return (
@@ -60,7 +60,7 @@ export default function Header({
           <li>
             <Link
               className={
-                activeTab === "Hem" ? "navbar-item active" : "navbar-item"
+                activeTab === "Hem" ? "navbar-item active1" : "navbar-item"
               }
               to={PathConstants.Hem}
               onClick={() => handleHemTab()}
@@ -71,7 +71,7 @@ export default function Header({
           <li>
             <Link
               className={
-                activeTab === "OmMig" ? "navbar-item active" : "navbar-item"
+                activeTab === "OmMig" ? "navbar-item active1" : "navbar-item"
               }
               to={PathConstants.Hem}
               onClick={() => handleOmMigTab()}
@@ -96,7 +96,7 @@ export default function Header({
           <li>
             <Link
               className={
-                activeTab === "Kontakt" ? "navbar-item active" : "navbar-item"
+                activeTab === "Kontakt" ? "navbar-item active1" : "navbar-item"
               }
               to={PathConstants.Hem}
               onClick={() => handleKontaktTab()}
