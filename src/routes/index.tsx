@@ -1,8 +1,8 @@
 import { lazy } from "react";
 
-const Hem = lazy(() => import("../pages/Hem"));
+// const Hem = lazy(() => import("../pages/Hem"));
 const Psykoterapi = lazy(() => import("../pages/Psykoterapi"));
-const Kontakt = lazy(() => import("../pages/Kontakt"));
+// const Kontakt = lazy(() => import("../pages/Kontakt"));
 
 const routes = [
   {
