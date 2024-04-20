@@ -6,10 +6,10 @@ import { HeaderProps } from "../interfaces/Interface";
 // import { useScrollRefs } from "./Layout";
 
 export default function Header({
-  // scrollToRef,
+  scrollToRef,
   activeTab,
-}: // setActiveTab,
-HeaderProps) {
+  setActiveTab,
+}: HeaderProps) {
   // const [activeSection, setActiveSection] = useState("");
   // const [isVisible, setIsVisible] = useState(false);
   // const observerRef = useRef<IntersectionObserver | null>(null);
@@ -28,23 +28,23 @@ HeaderProps) {
   // Todo: snygg till detta senare (använd en samma metod 3ggr)
 
   const handleHemTab = () => {
-    // scrollToRef("Hem");
-    // setActiveTab("Hem");
+    scrollToRef("Hem");
+    setActiveTab("Hem");
   };
 
   const handlePsykoterapiTab = () => {
-    // scrollToRef("Psykoterapi");
-    // setActiveTab("Psykoterapi");
+    scrollToRef("Psykoterapi");
+    setActiveTab("Psykoterapi");
   };
 
   const handleOmMigTab = () => {
-    // scrollToRef("OmMig");
-    // setActiveTab("OmMig");
+    scrollToRef("OmMig");
+    setActiveTab("OmMig");
   };
 
   const handleKontaktTab = () => {
-    // scrollToRef("Kontakt");
-    // setActiveTab("Kontakt");
+    scrollToRef("Kontakt");
+    setActiveTab("Kontakt");
   };
 
   return (
