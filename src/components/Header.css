@@ -64,7 +64,8 @@
     left: 0; /* Adjust if necessary based on your layout */
     height: 64px;
     width: 100%;
-    z-index: 1000; /* Increase z-index if necessary */
+    z-index: 12;
+    /* Increase z-index if necessary */
   }
 
   .navbar-container input[type="checkbox"] {
