@@ -60,7 +60,7 @@ export default function Header({
           <li>
             <Link
               className={
-                activeTab === "Hem" ? "navbar-item active1" : "navbar-item"
+                activeTab === "Hem" ? "navbar-item active" : "navbar-item"
               }
               to={PathConstants.Hem}
               onClick={() => handleHemTab()}
@@ -71,7 +71,7 @@ export default function Header({
           <li>
             <Link
               className={
-                activeTab === "OmMig" ? "navbar-item active1" : "navbar-item"
+                activeTab === "OmMig" ? "navbar-item active" : "navbar-item"
               }
               to={PathConstants.Hem}
               onClick={() => handleOmMigTab()}
@@ -96,7 +96,7 @@ export default function Header({
           <li>
             <Link
               className={
-                activeTab === "Kontakt" ? "navbar-item active1" : "navbar-item"
+                activeTab === "Kontakt" ? "navbar-item active" : "navbar-item"
               }
               to={PathConstants.Hem}
               onClick={() => handleKontaktTab()}
