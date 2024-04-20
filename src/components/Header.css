@@ -41,7 +41,7 @@
 }
 
 @media (max-width: 481px) {
-  /* .navbar-container {
+  .navbar-container {
     background-color: rgb(234, 228, 228);
     box-shadow: 0px 0px 10px 0px #aaa;
     display: block;
@@ -51,6 +51,8 @@
     width: 100%;
     z-index: 12;
   }
+
+  /*
 
   .navbar-container input[type="checkbox"] {
     position: absolute;
