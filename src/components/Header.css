@@ -67,8 +67,6 @@
     z-index: 1000; /* Increase z-index if necessary */
   }
 
-  /*
-
   .navbar-container input[type="checkbox"] {
     position: absolute;
     display: block;
@@ -154,5 +152,5 @@
   .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform-origin: right;
     transform: rotate(34deg);
-  } */
+  }
 }
