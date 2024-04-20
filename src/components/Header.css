@@ -42,27 +42,16 @@
 
 @media (max-width: 481px) {
   .navbar-container {
-    background-color: rgb(234, 228, 228);
-    box-shadow: 0px 0px 10px 0px #aaa;
-    display: block;
-    position: fixed;
-    height: 64px;
-    top: 0;
-    left: 0;
-    opacity: 0.85;
-    width: 100%;
-    z-index: 12;
-  }
-  /* .navbar-container {
     background-color: rgba(234, 228, 228, 0.85);
     box-shadow: 0px 0px 10px 0px #aaa;
     position: fixed;
-    top: 0; 
-    left: 0; 
+    top: 0;
+    left: 0;
     height: 64px;
     width: 100%;
-    z-index: 1000;
-  } */
+    z-index: 12;
+  }
+
   .navbar-container input[type="checkbox"] {
     position: absolute;
     display: block;
