@@ -1,13 +1,17 @@
 import "./Kontakt.css";
 import { useScrollRefs } from "../components/Layout";
-import { FormEvent, useRef, useState } from "react";
+import { FormEvent, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Kontakt = () => {
   const { kontaktRef } = useScrollRefs();
-  const [skicka, setSkicka] = useState<string>("Skicka");
-  const [isSkicka, setIsSkicka] = useState<boolean>(false);
+  const [namn, setNamn] = useState("");
+  const [efterName, setEfterName] = useState("");
+  const [email, setEmail] = useState("");
+  const [meddelande, setMeddelande] = useState("");
+  const [skicka, setSkicka] = useState("Skicka");
+  const [isSkicka, setIsSkicka] = useState(false);
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -15,56 +19,31 @@ const Kontakt = () => {
     const formData = new FormData(event.currentTarget);
     formData.append("access_key", import.meta.env.VITE_WEB3FORM_API_KEY);
     formData.append("from_name", "Nathalie Psykolog AB");
-    formData.append("replyto", "notify@web3forms.com");
     formData.append("subject", "Du har fått ett nytt meddelande!");
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      setSkicka("Skickad");
-      toast.success("Meddelandet är skickat!");
+    const fetchEmailJSON = async () => {
+      await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
       setIsSkicka(true);
-      setTimeout(() => {
-        setSkicka(skicka);
-        setIsSkicka(false);
-      }, 3000);
-      event.currentTarget?.reset();
-    } else {
-      console.log("Error", data);
-      setSkicka("Ej skickad!");
-      toast.error("Meddelandet är inte skickat!");
-    }
+      toast.success("Meddelandet är skickat!");
+      setSkicka("Skickad");
+      setNamn("");
+      setEfterName("");
+      setEmail("");
+      setMeddelande("");
+    };
+
+    fetchEmailJSON()
+      .then(() => {
+        setIsSkicka(false), setSkicka(skicka);
+      })
+      .catch(() => {
+        setSkicka("Ej skickad!");
+        toast.error("Meddelandet är inte skickat!");
+      });
   };
-
-  // const sendConfirmationEmail = async (email: string) => {
-  //   try {
-  //     const response = await fetch("YOUR_EMAIL_SERVICE_ENDPOINT", {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         to: email,
-  //         subject: "Confirmation Email",
-  //         text: "Thank you for contacting us!",
-  //       }),
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //         Authorization: "YOUR_API_KEY", // If required by your email service
-  //       },
-  //     });
-
-  //     if (response.ok) {
-  //       console.log("Confirmation email sent successfully");
-  //     } else {
-  //       console.error("Failed to send confirmation email");
-  //     }
-  //   } catch (error) {
-  //     console.error("Error sending confirmation email:", error);
-  //   }
-  // };
 
   return (
     <div id="kontaktSectionId" ref={kontaktRef}>
@@ -74,8 +53,8 @@ const Kontakt = () => {
           <p>Vid frågor är du välkommen att maila mig på </p>
           <div className="span-container">
             <span>
-              <a href="mailto:nathaliekorhonen.psykolog@gmail.com">
-                nathaliekorhonen.psykolog@gmail.com
+              <a href="mailto:kontakt@nathaliekorhonenpsykolog.se">
+                kontakt@nathaliekorhonenpsykolog.se
               </a>
             </span>
           </div>
@@ -88,19 +67,49 @@ const Kontakt = () => {
       <form className="form-container" onSubmit={onSubmit}>
         <div className="form-label">
           <label />
-          Namn: <input type="text" name="namn" />
+          Namn:
+          <input
+            type="text"
+            name="namn"
+            placeholder="Namn:"
+            value={namn}
+            onChange={(e) => setNamn(e.target.value)}
+            required
+          />
         </div>
         <div className="form-email-label">
           <label />
-          Efternamn: <input type="text" name="efternamn" required />
+          Efternamn:
+          <input
+            type="text"
+            name="efternamn"
+            placeholder="Efternamn:"
+            value={efterName}
+            onChange={(e) => setEfterName(e.target.value)}
+            required
+          />
         </div>
         <div className="form-label">
           <label />
-          Email: <input type="email" name="email" required />
+          Email:
+          <input
+            type="email"
+            name="email"
+            placeholder="Email:"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
         </div>
         <div className="textarea-container">
           <label>Kort beskrivning om vad ditt ärendet gäller:</label>
-          <textarea name="message" required />
+          <textarea
+            name="message"
+            placeholder="Message:"
+            value={meddelande}
+            onChange={(e) => setMeddelande(e.target.value)}
+            required
+          />
           <button className="btn-submit" disabled={isSkicka}>
             {skicka}
           </button>
