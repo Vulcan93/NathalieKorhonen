@@ -1,8 +1,7 @@
 import "./Kontakt.css";
 import { useScrollRefs } from "../components/Layout";
 import { FormEvent, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import Modal from "react-modal";
 
 const Kontakt = () => {
   const { kontaktRef } = useScrollRefs();
@@ -12,6 +11,7 @@ const Kontakt = () => {
   const [meddelande, setMeddelande] = useState("");
   const [skicka, setSkicka] = useState("Skicka");
   const [isSkicka, setIsSkicka] = useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -26,13 +26,14 @@ const Kontakt = () => {
         method: "POST",
         body: formData,
       });
+
       setIsSkicka(true);
-      toast.success("Meddelandet är skickat!");
       setSkicka("Skickad");
       setNamn("");
       setEfterName("");
       setEmail("");
       setMeddelande("");
+      setIsOpen(true);
     };
 
     fetchEmailJSON()
@@ -41,7 +42,6 @@ const Kontakt = () => {
       })
       .catch(() => {
         setSkicka("Ej skickad!");
-        toast.error("Meddelandet är inte skickat!");
       });
   };
 
@@ -71,7 +71,7 @@ const Kontakt = () => {
           <input
             type="text"
             name="namn"
-            placeholder="Namn:"
+            placeholder="Namn"
             value={namn}
             onChange={(e) => setNamn(e.target.value)}
             required
@@ -83,7 +83,7 @@ const Kontakt = () => {
           <input
             type="text"
             name="efternamn"
-            placeholder="Efternamn:"
+            placeholder="Efternamn"
             value={efterName}
             onChange={(e) => setEfterName(e.target.value)}
             required
@@ -95,7 +95,7 @@ const Kontakt = () => {
           <input
             type="email"
             name="email"
-            placeholder="Email:"
+            placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -105,7 +105,7 @@ const Kontakt = () => {
           <label>Kort beskrivning om vad ditt ärendet gäller:</label>
           <textarea
             name="message"
-            placeholder="Message:"
+            placeholder="Message"
             value={meddelande}
             onChange={(e) => setMeddelande(e.target.value)}
             required
@@ -113,7 +113,11 @@ const Kontakt = () => {
           <button className="btn-submit" disabled={isSkicka}>
             {skicka}
           </button>
-          <ToastContainer autoClose={3000} />
+          <Modal isOpen={modalIsOpen} onRequestClose={() => setIsOpen(false)}>
+            <h2>Tack!</h2>
+            <p>Tack för att ni har kontaktat mig jag återkommer asap</p>
+            <button onClick={() => setIsOpen(false)}>Stäng</button>
+          </Modal>
         </div>
       </form>
     </div>
