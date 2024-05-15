@@ -1,4 +1,3 @@
-import "./Kontakt.css";
 import { useScrollRefs } from "../components/Layout";
 import { FormEvent, useState } from "react";
 import Modal from "react-modal";
@@ -47,7 +46,7 @@ const Kontakt = () => {
 
   return (
     <div id="kontaktSectionId" ref={kontaktRef} className="m-[2rem]">
-      <div className="kontakt-containerr text-left mt-[5rem] mb-[1rem]">
+      <div className="text-left mt-[5rem] mb-[1rem]">
         <h4 className="text-[2rem] leading-[3rem]">Kontakt</h4>
         <p>Vid frågor är du välkommen att maila mig på </p>
         <span className="mt-[1rem] mb-[1rem]">
