@@ -1,4 +1,3 @@
-import "./Psykoterapi.css";
 import { useScrollRefs } from "../components/Layout";
 import blommor from "../../public/blommor.jpg";
 import psykologforetagarnaLogo from "../../public/psykologforetagarna.png";
@@ -31,11 +30,7 @@ const Psykoterapi = () => {
             väcks.
           </p>
         </div>
-        <img
-          className="pt-[4rem] max-w-full h-auto sm:w-2/3  md:w-1/2 lg:w-1/3"
-          src={blommor}
-          alt="blommor2"
-        />
+        <img className="" src={blommor} alt="blommor" />
       </div>
       <div
         // id="psykoterapiSectionId"
