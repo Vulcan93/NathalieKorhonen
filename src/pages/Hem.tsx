@@ -7,9 +7,9 @@ const Hem = () => {
       <div className="hero">
         <p>Psykologmottagning Nathalie Korhonen</p>
       </div>
-      <section className="hem-container">
+      <section className="m-[2rem] mt-[5rem]">
         <img className="img-profilbild" src={profilbild} alt="bild" />
-        <div className="hem-beskrivning">
+        <div>
           <article>
             <h1 className="visuallyhidden"></h1>
             <p>

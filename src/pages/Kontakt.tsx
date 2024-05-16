@@ -47,7 +47,7 @@ const Kontakt = () => {
   return (
     <div id="kontaktSectionId" ref={kontaktRef} className="m-[2rem]">
       <div className="text-left mt-[5rem] mb-[1rem]">
-        <h4 className="text-[2rem] leading-[3rem]">Kontakt</h4>
+        <h4 className="leading-[3rem]">Kontakt</h4>
         <p>Vid frågor är du välkommen att maila mig på </p>
         <span className="mt-[1rem] mb-[1rem]">
           <a
@@ -66,7 +66,7 @@ const Kontakt = () => {
         <div className="grid grid-cols-2 gap-4 ">
           <label className="py-1.5">Namn:</label>
           <input
-            className="border-solid border-2 py-1.5 border-[#938484] rounded"
+            className="border-solid border-2 py-1.5 border-[#938484] rounded max-w-60"
             type="text"
             name="namn"
             placeholder="Namn"
@@ -76,7 +76,7 @@ const Kontakt = () => {
           />
           <label className="py-1.5">Efternamn:</label>
           <input
-            className="border-solid border-2 py-1.5 border-[#938484] rounded"
+            className="border-solid border-2 py-1.5 border-[#938484] rounded max-w-60"
             type="text"
             name="efternamn"
             placeholder="Efternamn"
@@ -86,7 +86,7 @@ const Kontakt = () => {
           />
           <label className="py-1.5">Email:</label>
           <input
-            className="border-solid border-2 py-1.5 border-[#938484] rounded"
+            className="border-solid border-2 py-1.5 border-[#938484] rounded max-w-60"
             type="email"
             name="email"
             placeholder="Email"
@@ -96,11 +96,11 @@ const Kontakt = () => {
           />
         </div>
         <div className="grid">
-          <label className="text-center mb-[1rem]">
+          <label className="text-center mb-[1rem] ">
             Kort beskrivning om vad ditt ärendet gäller:
           </label>
           <textarea
-            className="w-4/5 place-self-center min-h-[100px] border-2 border-[#938484] rounded mb-[1rem]"
+            className="w-4/5 place-self-center min-h-[100px] border-2 border-[#938484] rounded mb-[1rem] max-w-4xl"
             name="message"
             placeholder="Message"
             value={meddelande}

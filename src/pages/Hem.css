@@ -15,27 +15,6 @@
   }
 }
 
-.hem-container {
-  display: flex;
-  padding-top: 1rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-
-.img-profilbild {
-  padding-top: 2rem;
-  margin: auto;
-}
-
-.hem-beskrivning {
-  padding: 2rem;
-  padding-top: 5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  min-width: 240px;
-  flex: 1;
-}
-
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);

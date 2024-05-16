@@ -10,8 +10,12 @@ const Psykoterapi = () => {
 
   return (
     <div>
-      <div id="omMigSectionId" ref={omMigRef} className="text-container">
-        <div className="om-mig-beskrivning">
+      <div
+        id="omMigSectionId"
+        ref={omMigRef}
+        className="grid auto-rows-auto min-[560px]:grid-cols-2 gap-8 xs:grid-cols-1 m-[2rem] mt-[5rem]"
+      >
+        <div>
           <h2>Om mig</h2>
           <p>
             Jag är legitimerad psykolog med grundläggande psykoterapiutbildning
@@ -28,22 +32,19 @@ const Psykoterapi = () => {
           </p>
         </div>
         <img
-          className="img-psykoterapi-blommor"
+          className="pt-[4rem] max-w-full h-auto sm:w-2/3  md:w-1/2 lg:w-1/3"
           src={blommor}
           alt="blommor2"
-          width={255}
-          height={400}
         />
       </div>
       <div
         // id="psykoterapiSectionId"
         ref={psykoterapiRef}
-        className="psykoterapi-container"
+        className="m-[2rem] mt-[5rem]"
       >
-        <div className="psykoterapi-beskrivning">
+        <div>
           <h3>Psykoterapi</h3>
-          <div className="priser-container"></div>
-          <p className="psykoterapi-content">
+          <p className="pt-[1rem]">
             Alla kan ibland vara i behov av att få prata med någon utomstående
             om hur man har det. Tillsammans med någon annan reflektera kring ens
             val och livssituation. Ibland söker man en tydlig förändring, och
@@ -57,10 +58,10 @@ const Psykoterapi = () => {
             i vår kontakt, ex. en separation, relation, traumatisk händelse osv,
             och ibland är kontakten mer flytande och utforskande.
           </p>
-          <p className="psykoterapi-one-liner-content">
+          <p className="py-[1rem]">
             Psykoterapi passar dig som exempelvis önskar hjälp med:
           </p>
-          <ul className="psykoterapi-content">
+          <ul className="pt-[1rem]">
             <li>Relationsproblem.</li>
             <li>Ensamhet och svårigheter att skapa nära relationer.</li>
             <li>
@@ -80,39 +81,41 @@ const Psykoterapi = () => {
             </li>
           </ul>
 
-          <p className="psykoterapi-content">
-            Jag tar emot klienter som är över 18 år.
-          </p>
-          <p className="psykoterapi-content">
+          <p className="pt-[1rem]">Jag tar emot klienter som är över 18 år.</p>
+          <p className="pt-[1rem]">
             Just nu erbjuder jag endast psykoterapi genom digitala samtal via
             samtalsplattformen Kaddio. Innan vårt samtal loggar du in med
             BankID. Inom en snar framtid kommer jag också kunna erbjuda fysiska
             besök i centrala Göteborg.
           </p>
-          <p className="psykoterapi-content">
-            Pris: 850 kr (45 minuter samtal)
-          </p>
+          <p className="pt-[1rem]">Pris: 850 kr (45 minuter samtal)</p>
         </div>
       </div>
-      <div className="psykologForetagarna-container">
-        <div className="psykologForetagarna-content">
+      <div className="m-[2rem] mt-[5rem] text-[12px]">
+        <div>
           Under vårt första samtal kommer jag att förklara hur vi tillsammans
           kan arbeta och vilka ramar som gäller under vår kontakt. Bra
           information att veta redan nu är:
           <ul>
-            <li>Jag arbetar under tystnadsplikt.</li>
-            <li>Jag journalför våra samtal.</li>
-            <li>
+            <li className="ml-[1rem]">Jag arbetar under tystnadsplikt.</li>
+            <li className="ml-[1rem]">Jag journalför våra samtal.</li>
+            <li className="ml-[1rem]">
               Jag är enligt lag skyldig att anmäla oro kring ett barn som far
               illa till socialtjänsten.
             </li>
-            <li>Jag är medlem i Psykologförbundet och Psykologföretagarna.</li>
-            <li>
+            <li className="ml-[1rem]">
+              Jag är medlem i Psykologförbundet och Psykologföretagarna.
+            </li>
+            <li className="ml-[1rem]">
               Du som patient skyddas därmed av patientförsäkring enligt
               patientsäkerhetslagen 2010:65.
             </li>
-            <li>Jag står under tillsyn av Inspektionen för vård och omsorg.</li>
-            <li>Jag behandlar dina personuppgifter enligt GDPR.</li>
+            <li className="ml-[1rem]">
+              Jag står under tillsyn av Inspektionen för vård och omsorg.
+            </li>
+            <li className="ml-[1rem]">
+              Jag behandlar dina personuppgifter enligt GDPR.
+            </li>
             <p>
               Som medlem av Sveriges psykologförbund och Psykologföretagarna i
               Sverige arbetar jag enligt förbundets yrkesetiska principer för
@@ -124,10 +127,10 @@ const Psykoterapi = () => {
           </ul>
         </div>
         <img
-          className="img-psykologForetagarna"
+          className="pt-[2rem] max-w-[240px] max-h-[500px]"
           src={psykologforetagarnaLogo}
-          width={255}
-          height={150}
+          // width={255}
+          // height={150}
         />
       </div>
     </div>
