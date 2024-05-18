@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import PathConstants from "../routes/PathConstants";
 import "./Header.css";
 import { HeaderProps } from "../interfaces/Interface";
+import { useEffect, useRef } from "react";
 // import { RefObject, useEffect, useLayoutEffect, useRef, useState } from "react";
 // import { useScrollRefs } from "./Layout";
 
@@ -25,7 +26,24 @@ export default function Header({
   //   threshold: 1,
   // };
 
-  // Todo: snygg till detta senare (använd en samma metod 3ggr)
+  const checkboxRef = useRef<HTMLInputElement>(null);
+  console.log(checkboxRef);
+  const handleDocumentClick = (event: MouseEvent) => {
+    if (
+      checkboxRef.current &&
+      !checkboxRef.current.contains(event.target as Node) &&
+      checkboxRef.current.checked
+    ) {
+      checkboxRef.current.checked = false;
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleDocumentClick);
+    return () => {
+      document.removeEventListener("click", handleDocumentClick);
+    };
+  }, []);
 
   const handleHemTab = () => {
     scrollToRef("Hem");
@@ -50,7 +68,7 @@ export default function Header({
   return (
     <header>
       <nav className="navbar-container">
-        <input type="checkbox" name="" id="" />
+        <input type="checkbox" ref={checkboxRef} />
         <div className="hamburger-lines">
           <span className="line line1"></span>
           <span className="line line2"></span>
