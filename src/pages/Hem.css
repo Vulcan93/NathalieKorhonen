@@ -8,10 +8,34 @@
   padding-top: 200px;
   padding-bottom: 200px;
   & p {
-    font-size: min(2.3rem);
+    /* font-size: min(2.3rem); */
     text-align: center;
     margin-top: -100px;
     color: white;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding-bottom: 400px;
+  }
+  & p {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero {
+    padding-bottom: 450px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .hero {
+    padding-bottom: 550px;
+  }
+  & p {
+    padding-top: 120px;
   }
 }
 

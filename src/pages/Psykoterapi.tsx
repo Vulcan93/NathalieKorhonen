@@ -12,11 +12,18 @@ const Psykoterapi = () => {
       <div
         id="omMigSectionId"
         ref={omMigRef}
-        className="grid auto-rows-auto min-[560px]:grid-cols-2 gap-8 xs:grid-cols-1 m-[2rem] mt-[5rem]"
+        // className="grid auto-rows-auto min-[560px]:grid-cols-2 gap-8 xs:grid-cols-1 m-[2rem] mt-[5rem]"
+        className="grid place-items-center 
+        sm:gap-8 sm:grid-cols-2 
+        m-[2rem] mt-[5rem] 
+        md:m-[4rem] md:mt-[8rem] 
+        lg:m-[6rem] lg:mt-[10rem] lg:gap-20
+        xl:m-[8rem] xl:mt-[12rem] xl:gap-32
+        xxl:m-[10rem] xxl:mt-[14rem] xxl:gap-36"
       >
         <div>
           <h2>Om mig</h2>
-          <p>
+          <p className="md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px] lg:pt-[0rem]">
             Jag är legitimerad psykolog med grundläggande psykoterapiutbildning
             i KBT (kognitiv beteendeterapi) och PDT (psykodynamisk terapi). Jag
             är utbildad på Göteborgs Universitet. Mitt sätt att arbeta är
@@ -30,16 +37,24 @@ const Psykoterapi = () => {
             väcks.
           </p>
         </div>
-        <img className="" src={blommor} alt="blommor" />
+        <img
+          className="w-[20rem] lg:w-[20rem] xl:w-[24rem] xl:w-[30rem] mt-[2rem]"
+          src={blommor}
+          alt="blommor"
+        />
       </div>
       <div
         // id="psykoterapiSectionId"
         ref={psykoterapiRef}
-        className="m-[2rem] mt-[5rem]"
+        className="m-[2rem] mt-[5rem] 
+        md:m-[4rem] md:mt-[8rem] 
+        lg:m-[6rem] lg:mt-[10rem]
+        xl:m-[8rem] xl:mt-[12rem]
+        xxl:m-[10rem] xxl:mt-[14rem]"
       >
         <div>
           <h3>Psykoterapi</h3>
-          <p className="pt-[1rem]">
+          <p className="mt-[1rem] md:text-[18px] lg:text-[22px] lg:pt-[0rem] xl:text-[26px] xxl:text-[30px]">
             Alla kan ibland vara i behov av att få prata med någon utomstående
             om hur man har det. Tillsammans med någon annan reflektera kring ens
             val och livssituation. Ibland söker man en tydlig förändring, och
@@ -53,10 +68,10 @@ const Psykoterapi = () => {
             i vår kontakt, ex. en separation, relation, traumatisk händelse osv,
             och ibland är kontakten mer flytande och utforskande.
           </p>
-          <p className="py-[1rem]">
+          <p className="py-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
             Psykoterapi passar dig som exempelvis önskar hjälp med:
           </p>
-          <ul className="pt-[1rem]">
+          <ul className="pt-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
             <li>Relationsproblem.</li>
             <li>Ensamhet och svårigheter att skapa nära relationer.</li>
             <li>
@@ -76,18 +91,30 @@ const Psykoterapi = () => {
             </li>
           </ul>
 
-          <p className="pt-[1rem]">Jag tar emot klienter som är över 18 år.</p>
-          <p className="pt-[1rem]">
+          <p className="pt-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
+            Jag tar emot klienter som är över 18 år.
+          </p>
+          <p className="pt-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
             Just nu erbjuder jag endast psykoterapi genom digitala samtal via
             samtalsplattformen Kaddio. Innan vårt samtal loggar du in med
             BankID. Inom en snar framtid kommer jag också kunna erbjuda fysiska
             besök i centrala Göteborg.
           </p>
-          <p className="pt-[1rem]">Pris: 850 kr (45 minuter samtal)</p>
+          <p className="pt-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
+            Pris: 850 kr (45 minuter samtal)
+          </p>
         </div>
       </div>
-      <div className="m-[2rem] mt-[5rem] text-[12px]">
-        <div>
+      <div
+        className="grid place-items-center 
+      gap-8 m-[2rem] mt-[5rem] text-[12px] 
+      md:place-items-stretch md:grid-cols-2 
+      md:m-[4rem] md:mt-[8rem] 
+      lg:m-[6rem] lg:mt-[10rem] lg:gap-20
+      xl:m-[8rem] xl:mt-[12rem] xl:gap-32
+      xxl:m-[10rem] xxl:mt-[14rem] xxl:gap-36"
+      >
+        <div className="md:text-[14px] lg:text-[18px] xl:text-[20px] xxl:text-[24px]">
           Under vårt första samtal kommer jag att förklara hur vi tillsammans
           kan arbeta och vilka ramar som gäller under vår kontakt. Bra
           information att veta redan nu är:
@@ -111,7 +138,7 @@ const Psykoterapi = () => {
             <li className="ml-[1rem]">
               Jag behandlar dina personuppgifter enligt GDPR.
             </li>
-            <p>
+            <p className="lg:pt-[0rem]">
               Som medlem av Sveriges psykologförbund och Psykologföretagarna i
               Sverige arbetar jag enligt förbundets yrkesetiska principer för
               psykologer i Norden och kvalitetssäkrar mitt arbete Verksamheten
@@ -122,10 +149,14 @@ const Psykoterapi = () => {
           </ul>
         </div>
         <img
-          className="pt-[2rem] max-w-[240px] max-h-[500px]"
+          className="w-[18rem] 
+          sm:w-[24rem] 
+          md:w-[20rem] md:h-[12rem] 
+          lg:w-[24rem] lg:h-[14rem]
+          xl:w-[30rem] xl:h-[18rem]
+          xxl:w-[36rem] xxl:h-[20rem]
+          mt-[2rem] "
           src={psykologforetagarnaLogo}
-          // width={255}
-          // height={150}
         />
       </div>
     </div>

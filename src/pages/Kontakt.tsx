@@ -45,11 +45,23 @@ const Kontakt = () => {
   };
 
   return (
-    <div id="kontaktSectionId" ref={kontaktRef} className="m-[2rem]">
-      <div className="text-left mt-[5rem] mb-[1rem]">
+    <div
+      id="kontaktSectionId"
+      ref={kontaktRef}
+      className="m-[2rem] md:m-[4rem] md:mt-[8rem]
+      lg:m-[6rem] lg:mt-[10rem]
+      xl:m-[8rem] xl:mt-[12rem]
+      xxl:m-[10rem] xxl:mt-[14rem]"
+    >
+      <div
+        className="text-left 
+      mt-[5rem] mb-[1rem]"
+      >
         <h4 className="leading-[3rem]">Kontakt</h4>
-        <p>Vid frågor är du välkommen att maila mig på </p>
-        <span className="mt-[1rem] mb-[1rem]">
+        <p className="md:text-[18px] lg:text-[22px] lg:pt-[0rem] xl:text-[26px] xxl:text-[30px]">
+          Vid frågor är du välkommen att maila mig på
+        </p>
+        <span className="mt-[1rem] mb-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
           <a
             className="text-blue-700 no-underline"
             href="mailto:kontakt@nathaliekorhonenpsykolog.se"
@@ -57,14 +69,16 @@ const Kontakt = () => {
             kontakt@nathaliekorhonenpsykolog.se
           </a>
         </span>
-        <p className="mb-[2rem]">
+        <p className="mb-[2rem] md:text-[18px] lg:text-[22px] lg:pt-[0rem] xl:text-[26px] xxl:text-[30px]">
           Om du skulle vilja boka ett första samtal vänliga fyll i
           intresseanmälan nedan
         </p>
       </div>
       <form className="space-y-8" onSubmit={onSubmit}>
         <div className="grid grid-cols-2 gap-4 ">
-          <label className="py-1.5">Namn:</label>
+          <label className="py-1.5 md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
+            Namn:
+          </label>
           <input
             className="border-solid border-2 py-1.5 border-[#938484] rounded max-w-60"
             type="text"
@@ -74,7 +88,9 @@ const Kontakt = () => {
             onChange={(e) => setNamn(e.target.value)}
             required
           />
-          <label className="py-1.5">Efternamn:</label>
+          <label className="py-1.5 md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
+            Efternamn:
+          </label>
           <input
             className="border-solid border-2 py-1.5 border-[#938484] rounded max-w-60"
             type="text"
@@ -84,7 +100,9 @@ const Kontakt = () => {
             onChange={(e) => setEfterName(e.target.value)}
             required
           />
-          <label className="py-1.5">Email:</label>
+          <label className="py-1.5 md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
+            Email:
+          </label>
           <input
             className="border-solid border-2 py-1.5 border-[#938484] rounded max-w-60"
             type="email"
@@ -96,7 +114,7 @@ const Kontakt = () => {
           />
         </div>
         <div className="grid">
-          <label className="text-center mb-[1rem] ">
+          <label className="text-center mb-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
             Kort beskrivning om vad ditt ärendet gäller:
           </label>
           <textarea
@@ -108,7 +126,7 @@ const Kontakt = () => {
             required
           />
           <button
-            className="w-2/5 place-self-center bg-[rgb(190,187,181)] rounded p-2 mb-[5rem] hover:bg-sky-400 active:bg-rose-600"
+            className="w-2/5 place-self-center bg-[rgb(190,187,181)] rounded p-2 mb-[5rem] hover:bg-sky-400 active:bg-rose-600 md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]"
             disabled={isSkicka}
           >
             {skicka}

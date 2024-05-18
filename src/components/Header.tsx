@@ -56,7 +56,7 @@ export default function Header({
           <span className="line line2"></span>
           <span className="line line3"></span>
         </div>
-        <ul className="navbar-menu">
+        <ul className="navbar-menu md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[28px]">
           <li>
             <Link
               className={
