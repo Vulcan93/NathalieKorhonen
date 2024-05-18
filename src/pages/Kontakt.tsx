@@ -74,9 +74,10 @@ const Kontakt = () => {
           intresseanmälan nedan
         </p>
       </div>
+      {/* <input type="checkbox"/> <label style="display: inline-block; width: 60px; overflow: hidden">Sample text sample text</label> */}
       <form className="space-y-8" onSubmit={onSubmit}>
         <div className="grid grid-cols-2 gap-4 ">
-          <label className="py-1.5 md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
+          <label className="py-1.5 md:text-[18px] sm:pl-[12rem] xl:pl-[22rem] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
             Namn:
           </label>
           <input
@@ -88,7 +89,7 @@ const Kontakt = () => {
             onChange={(e) => setNamn(e.target.value)}
             required
           />
-          <label className="py-1.5 md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
+          <label className="py-1.5 sm:pl-[12rem] xl:pl-[22rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
             Efternamn:
           </label>
           <input
@@ -100,7 +101,7 @@ const Kontakt = () => {
             onChange={(e) => setEfterName(e.target.value)}
             required
           />
-          <label className="py-1.5 md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
+          <label className="py-1.5 sm:pl-[12rem] xl:pl-[22rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
             Email:
           </label>
           <input
