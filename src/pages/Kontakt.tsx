@@ -74,10 +74,9 @@ const Kontakt = () => {
           intresseanmälan nedan
         </p>
       </div>
-      {/* <input type="checkbox"/> <label style="display: inline-block; width: 60px; overflow: hidden">Sample text sample text</label> */}
       <form className="space-y-8" onSubmit={onSubmit}>
         <div className="grid grid-cols-2 gap-4 ">
-          <label className="py-1.5 md:text-[18px] sm:pl-[12rem] xl:pl-[22rem] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
+          <label className="py-1.5 sm:pl-[12rem] md:text-[18px] xl:pl-[22rem] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
             Namn:
           </label>
           <input
@@ -127,18 +126,31 @@ const Kontakt = () => {
             required
           />
           <button
-            className="w-2/5 place-self-center bg-[rgb(190,187,181)] rounded p-2 mb-[5rem] hover:bg-sky-400 active:bg-rose-600 md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]"
+            className="w-2/5 place-self-center bg-green-400 rounded p-2 mb-[5rem] hover:bg-sky-400 active:bg-rose-600 md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]"
             disabled={isSkicka}
           >
             {skicka}
           </button>
-          <Modal isOpen={modalIsOpen} onRequestClose={() => setIsOpen(false)}>
-            <p>Tack för ditt meddelande! </p>
-            <p>
+          <Modal
+            className="bg-sky-200 text-center m-[2rem] sm:m-[4rem]  
+            lg:m-[8rem] xl:m-[12rem] xl:m-[16rem]
+            md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]"
+            isOpen={modalIsOpen}
+            onRequestClose={() => setIsOpen(false)}
+          >
+            <p className="text-left mt-[15rem] p-[2rem] font-bold">
+              Tack för ditt meddelande!{" "}
+            </p>
+            <p className="text-left p-[2rem]">
               Jag kommer att kontakta dig inom några dagar via den mail som du
               angett. Ibland hamnar svar i skräpmail så kolla gärna där också.
             </p>
-            <button onClick={() => setIsOpen(false)}>Stäng</button>
+            <button
+              className="w-2/5 bg-green-400 rounded p-2 mb-[5rem] hover:bg-sky-400 active:bg-rose-600 md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]"
+              onClick={() => setIsOpen(false)}
+            >
+              Stäng
+            </button>
           </Modal>
         </div>
       </form>

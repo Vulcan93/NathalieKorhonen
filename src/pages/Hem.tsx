@@ -9,7 +9,6 @@ const Hem = () => {
           Psykologmottagning Nathalie Korhonen
         </p>
       </div>
-      {/* <section className="grid auto-rows-auto place-items-center min-[560px]:grid-cols-2 gap-8 xs:grid-cols-1 m-[2rem] mt-[5rem]"> */}
       <section
         className="grid place-items-center 
       grid-cols-1 
