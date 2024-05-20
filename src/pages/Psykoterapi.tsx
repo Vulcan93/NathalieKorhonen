@@ -101,7 +101,7 @@ const Psykoterapi = () => {
             besök i centrala Göteborg.
           </p>
           <p className="pt-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
-            Pris: 850 kr (45 minuter samtal)
+            Pris: 950 kr (45 minuter samtal)
           </p>
         </div>
       </div>
