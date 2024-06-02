@@ -107,7 +107,7 @@ export default function Header({
               to={PathConstants.Hem}
               onClick={() => handlePsykoterapiTab()}
             >
-              Om Psykoterapi
+              Psykoterapi
             </Link>
           </li>
 

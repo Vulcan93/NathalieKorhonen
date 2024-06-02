@@ -70,8 +70,10 @@ const Kontakt = () => {
           </a>
         </span>
         <p className="mb-[2rem] md:text-[18px] lg:text-[22px] lg:pt-[0rem] xl:text-[26px] xxl:text-[30px]">
-          Om du skulle vilja boka ett första samtal vänliga fyll i
-          intresseanmälan nedan
+          Om du skulle vilja boka ett första samtal vänligen fyll i
+          intresseanmälan nedan. För att värna om sekretessen, beskriv ditt
+          ärende kortfattat och utelämna personliga detaljer och känslig
+          information.
         </p>
       </div>
       <form className="space-y-8" onSubmit={onSubmit}>
