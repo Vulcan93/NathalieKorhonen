@@ -117,7 +117,7 @@ const Kontakt = () => {
         </div>
         <div className="grid">
           <label className="text-center mb-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
-            Kort beskrivning om vad ditt ärendet gäller:
+            Kort beskrivning om vad ditt ärende gäller:
           </label>
           <textarea
             className="w-4/5 place-self-center min-h-[100px] border-2 border-[#938484] rounded mb-[1rem] max-w-4xl"

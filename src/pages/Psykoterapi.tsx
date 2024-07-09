@@ -33,8 +33,7 @@ const Psykoterapi = () => {
             uppväxt och relationer också kombinera med hemuppgifter för att
             öva/utmana dig mellan våra samtal. Jag tror på vikten av en trygg
             relation mellan dig och din psykolog för att skapa bra
-            förutsättningar för att våga utforska och prata om känslor som
-            väcks.
+            förutsättningar att våga utforska och prata om känslor som väcks.
           </p>
         </div>
         <img
