@@ -23,7 +23,10 @@ const Psykoterapi = () => {
       >
         <div>
           <h2>Om mig</h2>
-          <p className="md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px] lg:pt-[0rem]">
+          <p
+            className="md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px] lg:pt-[0rem]
+          xs:bg-white sm:mb-[6rem] rounded"
+          >
             Jag är legitimerad psykolog med grundläggande psykoterapiutbildning
             i KBT (kognitiv beteendeterapi) och PDT (psykodynamisk terapi). Jag
             är utbildad på Göteborgs Universitet. Mitt sätt att arbeta är
@@ -49,7 +52,8 @@ const Psykoterapi = () => {
         md:m-[4rem] md:mt-[8rem] 
         lg:m-[6rem] lg:mt-[10rem]
         xl:m-[8rem] xl:mt-[12rem]
-        xxl:m-[10rem] xxl:mt-[14rem]"
+        xxl:m-[10rem] xxl:mt-[14rem]
+        xs:bg-white sm:mb-[6rem] lg:pt-[0rem] rounded"
       >
         <div>
           <h3>Psykoterapi</h3>
@@ -113,7 +117,10 @@ const Psykoterapi = () => {
       xl:m-[8rem] xl:mt-[12rem] xl:gap-32
       xxl:m-[10rem] xxl:mt-[14rem] xxl:gap-36"
       >
-        <div className="md:text-[14px] lg:text-[18px] xl:text-[20px] xxl:text-[24px]">
+        <div
+          className="md:text-[14px] lg:text-[18px] xl:text-[20px] xxl:text-[24px]
+                     xs:bg-white sm:mb-[6rem] lg:pt-[0rem] rounded"
+        >
           Under vårt första samtal kommer jag att förklara hur vi tillsammans
           kan arbeta och vilka ramar som gäller under vår kontakt. Bra
           information att veta redan nu är:

@@ -51,7 +51,8 @@ const Kontakt = () => {
       className="m-[2rem] md:m-[4rem] md:mt-[8rem]
       lg:m-[6rem] lg:mt-[10rem]
       xl:m-[8rem] xl:mt-[12rem]
-      xxl:m-[10rem] xxl:mt-[14rem]"
+      xxl:m-[10rem] xxl:mt-[14rem]
+      xs:bg-white rounded"
     >
       <div
         className="text-left 
@@ -128,7 +129,9 @@ const Kontakt = () => {
             required
           />
           <button
-            className="w-2/5 place-self-center bg-green-400 rounded p-2 mb-[5rem] hover:bg-sky-400 active:bg-rose-600 md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]"
+            className="w-2/5 place-self-center bg-green-400 rounded p-2 mb-[5rem] hover:bg-sky-400 active:bg-rose-600 md:text-[18px] 
+            lg:text-[22px] xl:text-[26px] xxl:text-[30px]
+            xs:mb-[1rem]"
             disabled={isSkicka}
           >
             {skicka}
