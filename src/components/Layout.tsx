@@ -150,9 +150,9 @@ export default function Layout() {
           activeTab={activeTab}
         />
         <main>
-          <Suspense fallback={<div>Loading...</div>}>
-            <Outlet />
-          </Suspense>
+          {/* <Suspense fallback={<div>Loading...</div>}> */}
+          <Outlet />
+          {/* </Suspense> */}
         </main>
         <Footer />
       </div>
