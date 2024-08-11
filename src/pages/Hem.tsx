@@ -27,10 +27,7 @@ const Hem = () => {
         <div>
           <article>
             <h1 className="visuallyhidden"></h1>
-            <p
-              className="md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]
-            xs:bg-white sm:mb-[6rem] lg:pt-[0rem] rounded"
-            >
+            <p className="md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
               Mitt namn är Nathalie Korhonen och jag arbetar som legitimerad
               psykolog. Jag erbjuder psykoterapi för dig som kanske fastnat i
               nedstämdhet, oro, ångest, stress eller är i kris och behöver hjälp
