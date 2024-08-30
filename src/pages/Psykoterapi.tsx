@@ -94,10 +94,10 @@ const Psykoterapi = () => {
             Jag tar emot klienter som är över 18 år.
           </p>
           <p className="pt-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
-            Just nu erbjuder jag endast psykoterapi genom digitala samtal via
-            samtalsplattformen Kaddio. Innan vårt samtal loggar du in med
-            BankID. Inom en snar framtid kommer jag också kunna erbjuda fysiska
-            besök i centrala Göteborg.
+            Jag erbjuder både fysiska och digitala samtal. För fysiska samtal
+            sitter jag på en psykoterapimottagning på Vasastan i Göteborg. För
+            digitala samtal använder jag samtalsplattformen Kaddio, där du innan
+            vårt samtal loggar in med BankID.
           </p>
           <p className="pt-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
             Pris: 950 kr (45 minuter samtal)
