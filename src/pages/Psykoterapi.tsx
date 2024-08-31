@@ -95,7 +95,7 @@ const Psykoterapi = () => {
           </p>
           <p className="pt-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
             Jag erbjuder både fysiska och digitala samtal. För fysiska samtal
-            sitter jag på en psykoterapimottagning på Vasastan i Göteborg. För
+            sitter jag på en psykoterapimottagning på Vasagatan i Göteborg. För
             digitala samtal använder jag samtalsplattformen Kaddio, där du innan
             vårt samtal loggar in med BankID.
           </p>
