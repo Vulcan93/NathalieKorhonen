@@ -99,9 +99,13 @@ const Psykoterapi = () => {
             digitala samtal använder jag samtalsplattformen Kaddio, där du innan
             vårt samtal loggar in med BankID.
           </p>
-          <p className="pt-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
-            Pris: 950 kr (45 minuter samtal)
+          <p className="font-bold pt-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
+            Priser:
           </p>
+          <ul className="pt-[1rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]">
+            <li>950 kr (45 minuter samtal)</li>
+            <li>1550 kr (Parterapi: Första två samtalen 75 minuter, resterande samtal 60 minuter)</li>
+          </ul>
         </div>
       </div>
       <div
