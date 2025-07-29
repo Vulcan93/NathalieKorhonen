@@ -128,7 +128,7 @@ const Kontakt = () => {
             required
           />
           <button
-            className="w-2/5 place-self-center bg-green-400 rounded p-2 mb-[5rem] hover:bg-sky-400 active:bg-rose-600 md:text-[18px] 
+            className="w-2/5 place-self-center bg-white rounded p-2 mb-[5rem] md:text-[18px] 
             lg:text-[22px] xl:text-[26px] xxl:text-[30px]"
             disabled={isSkicka}
           >
@@ -149,7 +149,7 @@ const Kontakt = () => {
               angett. Ibland hamnar svar i skräpmail så kolla gärna där också.
             </p>
             <button
-              className="w-2/5 bg-green-400 rounded p-2 mb-[5rem] hover:bg-sky-400 active:bg-rose-600 md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]"
+              className="w-2/5 bg-white rounded p-2 mb-[5rem] md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px]"
               onClick={() => setIsOpen(false)}
             >
               Stäng
