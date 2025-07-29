@@ -24,9 +24,9 @@ const Psykoterapi = () => {
         <div>
           <h2>Om mig</h2>
           <p className="md:text-[18px] lg:text-[22px] xl:text-[26px] xxl:text-[30px] lg:pt-[0rem]">
-            Jag är legitimerad psykolog med grundläggande psykoterapiutbildning
-            i KBT (kognitiv beteendeterapi) och PDT (psykodynamisk terapi). Jag
-            är utbildad på Göteborgs Universitet. Mitt sätt att arbeta är
+            Jag är legitimerad psykolog med psykoterapiutbildning i KBT (kognitiv beteendeterapi), 
+            PDT (psykodynamisk terapi) samt IPT (interpersonell terapi).
+            Jag är utbildad på Göteborgs Universitet. Mitt sätt att arbeta är
             integrativt vilket betyder att jag försöker anpassa metod efter dina
             behov och förutsättningar. Att arbeta integrativt kan exempelvis
             vara genom att i en psykodynamisk terapi med fokus på exempelvis
@@ -34,7 +34,7 @@ const Psykoterapi = () => {
             öva/utmana dig mellan våra samtal. Jag tror på vikten av en trygg
             relation mellan dig och din psykolog för att skapa bra
             förutsättningar att våga utforska och prata om känslor som väcks.
-          </p>
+            </p>
         </div>
         <img
           className="w-[20rem] lg:w-[20rem] xl:w-[24rem] xl:w-[30rem] mt-[2rem]"
@@ -77,7 +77,7 @@ const Psykoterapi = () => {
               Stress, oro, ångest, sömnproblem, nedstämdhet och depression.
             </li>
             <li>
-              Höga krav på sig själv och problem med hur du ser på dig själv och
+              Höga krav på dig själv och problem med hur du ser på dig själv och
               ditt värde.
             </li>
             <li>
